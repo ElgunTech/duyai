@@ -203,6 +203,22 @@ At about $0.07 cost per minute, the margin is about 40% on Premium and 57% on Bu
 
 ## 5. Originality
 
+### Competitive landscape
+
+| Feature                                                              | **DuyAI**             | Samsung Galaxy AI     | Google Translate (app) | Otter.ai            |
+| -------------------------------------------------------------------- | --------------------- | --------------------- | ---------------------- | ------------------- |
+| Live speech translation                                              | ✅                    | ✅                    | ✅                     | ❌                  |
+| Two-way **phone call** translation                                   | ✅                    | ✅                    | ❌                     | ❌                  |
+| Summary with actions (calendar, reminders, who promised what)        | ✅                    | ❌                    | ❌                     | ✅ meetings only    |
+| **Works with any phone**, the other side installs nothing            | ✅                    | ❌ Galaxy phones only | ❌ not inside calls    | ❌ not inside calls |
+| **Azerbaijani**, incl. speech mixed with Russian / English / Turkish | ✅ tested on 24 calls | ❌                    | partial                | ❌                  |
+| **Scam alert during the call**                                       | ✅                    | ❌                    | ❌                     | ❌                  |
+| Call memory (recognizes a returning number)                          | ✅                    | ❌                    | ❌                     | ❌                  |
+
+<sub>Competitor columns reflect publicly described features at the time of writing; Google Pixel phones have call translation in the phone app, which is separate from the Google Translate app compared here.</sub>
+
+**DuyAI is the only one that translates real calls on any phone, turns them into actions and warns about scams, in Azerbaijani.**
+
 - **Inside the real call, not next to it.** Most translators are face-to-face apps or require both people to install the same app (VoIP). This works on an ordinary GSM call to any number, landlines included.
 - **Built for Azerbaijani as it is spoken:** code-switching with Russian, English and Turkish words, tested on a hand-made Azerbaijani set.
 - **More than translation:** commitments ("who promised what, by when") turn into calendar events. Call memory recognizes a returning number. The scam guard runs during the call, when it matters.
