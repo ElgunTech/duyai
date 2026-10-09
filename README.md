@@ -15,11 +15,11 @@ Submission to NeuroBridge.SI Baku, 9–10 October 2026.
 
 **Results at a glance**
 
-| Intent accuracy | Dates → exact ISO | Times    | Prices   | Commitment F1 | Automated tests | Languages |
-| --------------- | ----------------- | -------- | -------- | ------------- | --------------- | --------- |
-| **95.8%**       | **100%**          | **100%** | **100%** | **86.7%**     | **84 passing**  | **21**    |
+| Intent accuracy | Dates → exact ISO | Times    | Prices   | Commitment F1 | Automated tests | Languages | Users tested         |
+| --------------- | ----------------- | -------- | -------- | ------------- | --------------- | --------- | -------------------- |
+| **95.8%**       | **100%**          | **100%** | **100%** | **86.7%**     | **84 passing**  | **21**    | **~600, 94% useful** |
 
-<sub>Measured on our hand-labelled Azerbaijani test set (24 calls), see [§3](#3-quality-testing).</sub>
+<sub>Accuracy measured on our hand-labelled Azerbaijani test set (24 calls); user feedback counted by hand. See [§3](#3-quality-testing).</sub>
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,6 +46,8 @@ Submission to NeuroBridge.SI Baku, 9–10 October 2026.
 - They can make the call at all, without an interpreter, and the other party does not need any app.
 - Agreements are not lost. "Sabah", "cümə", "saat 3-də" are resolved to exact dates and times, measured at 100% on our test set.
 - They get warned before giving away an SMS code or card number.
+
+**User testing:** about **600 people** tried the DuyAI demo themselves, speaking with their own voice: visitors at the hackathon, plus friends, acquaintances and relatives during the hackathon. **94% said it is useful.** Responses were counted by hand.
 
 > **What sets it apart:** the value comes during the call and after it. Most tools stop at translation. Here, a single call also leaves you with exact dates, a calendar event, a reminder for your promise and a scam warning. The user needs nothing new: their own phone and number. The other party needs nothing at all.
 
@@ -118,7 +120,11 @@ There are **84 automated tests** (`npm test`, Vitest), all passing. They include
 
 Static checks: `npm run typecheck` (TypeScript strict) and `npm run lint` (ESLint) are clean.
 
-### 3.3 Failures we found in real calls, and what we did
+### 3.3 Testing with people
+
+About 600 people tried the demo with their own voice during the hackathon (event visitors, friends and family), and 94% rated it useful. The count was made by hand. Problems they ran into are part of the failure list below.
+
+### 3.4 Failures we found in real calls, and what we did
 
 | #   | Failure (observed on real calls / tests)                                                                                 | Fix                                                                                                                                 |
 | --- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -133,7 +139,7 @@ Static checks: `npm run typecheck` (TypeScript strict) and `npm run lint` (ESLin
 
 > **What sets it apart:** we publish our failures next to our scores. We report a hand-made Azerbaijani test set, a trained baseline (Claude vs a small open model before and after fine-tuning), unit tests for the safety-critical scam detector, and a list of real-call failures with the fix for each.
 
-### 3.4 Comparison with how it is done today
+### 3.5 Comparison with how it is done today
 
 |                                  | Speakerphone + translator app                | Human interpreter         | **DuyAI**                                                                                      |
 | -------------------------------- | -------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------------------------- |
