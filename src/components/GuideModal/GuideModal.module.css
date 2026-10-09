@@ -56,3 +56,48 @@
   line-height: 1.6;
   color: var(--text-2);
 }
+
+.downloads {
+  margin-bottom: 16px;
+}
+
+.downloadsTitle {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.downloadGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.download {
+  display: grid;
+  gap: 2px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-2);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.download span {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.download:hover {
+  border-color: var(--border-strong);
+}
+
+.download:focus-visible {
+  outline: 2px solid var(--me);
+  outline-offset: 2px;
+}

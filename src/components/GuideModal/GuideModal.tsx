@@ -84,6 +84,35 @@ export function GuideModal({ cablesReady, keysReady, devicesReady, onClose }: Gu
     },
   ];
 
+  // Official download pages only: we never redistribute third-party installers.
+  const downloads = [
+    {
+      name: "VB-CABLE",
+      note: tr("virtual kabel (pulsuz)", "virtual cable (free)"),
+      url: "https://vb-audio.com/Cable/",
+    },
+    {
+      name: "Voicemeeter",
+      note: tr("səs mikseri (pulsuz)", "audio mixer (free)"),
+      url: "https://vb-audio.com/Voicemeeter/",
+    },
+    {
+      name: tr("Telefon Bağlantısı (PC)", "Phone Link (PC)"),
+      note: "Microsoft Store",
+      url: "https://apps.microsoft.com/detail/9nmpj99vjbwv",
+    },
+    {
+      name: tr("Windows-a keçid (Android)", "Link to Windows (Android)"),
+      note: "Google Play",
+      url: "https://play.google.com/store/apps/details?id=com.microsoft.appmanager",
+    },
+    {
+      name: "Node.js",
+      note: tr("lokal server üçün", "for the local server"),
+      url: "https://nodejs.org/",
+    },
+  ];
+
   return (
     <Modal
       eyebrow={tr("Bir dəfəlik", "One time")}
@@ -95,6 +124,28 @@ export function GuideModal({ cablesReady, keysReady, devicesReady, onClose }: Gu
         </Button>
       }
     >
+      <section
+        className={styles.downloads}
+        aria-label={tr("Rəsmi yükləmələr", "Official downloads")}
+      >
+        <p className={styles.downloadsTitle}>
+          {tr("Rəsmi saytlardan yükləyin", "Download from the official sites")}
+        </p>
+        <div className={styles.downloadGrid}>
+          {downloads.map((d) => (
+            <a
+              key={d.url}
+              className={styles.download}
+              href={d.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>{d.name}</b>
+              <span>{d.note}</span>
+            </a>
+          ))}
+        </div>
+      </section>
       <ol className={styles.steps}>
         {steps.map((step, i) => (
           <li key={step.title} className={styles.step} data-done={step.done}>
