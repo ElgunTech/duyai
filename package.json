@@ -1,0 +1,48 @@
+{
+  "name": "duyai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DuyAI: real-time AI translation, transcription and call summaries inside an ordinary phone call",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n api,web -c blue,green \"node --watch server/index.js\" \"vite\"",
+    "build": "tsc --noEmit && vite build",
+    "prestart": "npm run build",
+    "start": "node server/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "check": "npm run typecheck && npm run lint && npm run test",
+    "eval": "node eval/run.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.132.1",
+    "cloudflared": "^0.7.3",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "microsoft-cognitiveservices-speech-sdk": "^1.52.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.1",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  }
+}

@@ -1,0 +1,58 @@
+.steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.step:first-child {
+  padding-top: 0;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.stepHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.number {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.step[data-done="true"] .number {
+  background: var(--ok);
+  border-color: var(--ok);
+  color: #fff;
+}
+
+.step[data-done="false"] .number {
+  border-color: var(--err);
+  color: var(--err);
+}
+
+.stepBody p {
+  margin: 8px 0 0 34px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-2);
+}

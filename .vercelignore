@@ -1,0 +1,11 @@
+# Never upload secrets or personal data to the public demo.
+.env
+.env.*
+!.env.example
+data/
+node_modules/
+training/
+sponsor/
+eval/results/
+dist/
+*.log

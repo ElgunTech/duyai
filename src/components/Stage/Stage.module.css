@@ -1,0 +1,272 @@
+.parties {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 96px minmax(0, 1fr);
+}
+
+/* party card */
+.party {
+  --c: var(--me);
+  --c-soft: var(--me-soft);
+  min-width: 0;
+  padding: 18px 20px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s;
+}
+
+.party[data-side="friend"] {
+  --c: var(--friend);
+  --c-soft: var(--friend-soft);
+}
+
+.party[data-state="speaking"] {
+  border-color: color-mix(in srgb, var(--c) 45%, var(--border));
+}
+
+.partyTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--c-soft);
+  color: var(--c);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.identity {
+  flex: 1;
+  min-width: 0;
+}
+
+.partyName {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.partyLang {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.code {
+  padding: 1px 5px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.state {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.state i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+
+.party[data-state="listening"] .state i {
+  background: var(--text-2);
+}
+
+.party[data-state="speaking"] .state {
+  color: var(--c);
+}
+
+.party[data-state="speaking"] .state i {
+  background: var(--c);
+}
+
+.party[data-state="ai"] .state {
+  color: var(--text);
+}
+
+.party[data-state="ai"] .state i {
+  background: var(--text);
+  animation: blink 1s ease-in-out infinite;
+}
+
+.wave {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 40px;
+  margin: 18px 0 10px;
+}
+
+.wave span {
+  flex: 1;
+  min-width: 2px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--c);
+  opacity: 0.18;
+  transition:
+    height 0.08s linear,
+    opacity 0.2s;
+}
+
+.party[data-state="speaking"] .wave span {
+  opacity: 0.85;
+}
+
+.party[data-state="ai"] .wave span {
+  background: var(--text);
+  opacity: 0.55;
+}
+
+.partial {
+  display: -webkit-box;
+  min-height: 40px;
+  margin: 0;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* AI bridge */
+.bridge {
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.bridgeLine {
+  flex: 1;
+  height: 1px;
+  background: var(--border-strong);
+}
+
+.bridgeCore {
+  width: 52px;
+  height: 52px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 1px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.bridgeLabel {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.bridgeLatency {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+.bridge[data-live="true"] .bridgeCore {
+  border-color: var(--text);
+}
+
+.bridge[data-live="true"] .bridgeLine {
+  background: repeating-linear-gradient(90deg, var(--text-2) 0 4px, transparent 4px 8px);
+  background-size: 16px 1px;
+  animation: dash 1.2s linear infinite;
+}
+
+.bridge[data-live="true"] .bridgeLine:last-child {
+  animation-direction: reverse;
+}
+
+@keyframes dash {
+  to {
+    background-position: 16px 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (max-width: 760px) {
+  .parties {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .bridge {
+    display: none;
+  }
+}
+
+.mute {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 4px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-2);
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    color 0.15s,
+    border-color 0.15s;
+}
+
+.mute:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.mute:focus-visible {
+  outline: 2px solid var(--c);
+  outline-offset: 2px;
+}
+
+.mute[aria-pressed="true"] {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+}
+
+.party[data-muted] .wave {
+  opacity: 0.25;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

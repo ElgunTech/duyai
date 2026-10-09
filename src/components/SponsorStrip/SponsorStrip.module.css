@@ -1,0 +1,77 @@
+.card {
+  padding: 16px 0 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.title {
+  margin: 0 18px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.viewport {
+  overflow: hidden;
+  /* Fade the logos in and out at the edges. */
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.track {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+  margin: 0;
+  padding: 0 7px;
+  list-style: none;
+  animation: scroll 28s linear infinite;
+}
+
+.viewport:hover .track {
+  animation-play-state: paused;
+}
+
+.item {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 168px;
+  height: 84px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  /* Logos come on white backgrounds: keep them on white in both themes. */
+  background: #fff;
+  overflow: hidden;
+}
+
+.item img {
+  display: block;
+  width: 140px;
+  height: 68px; /* the card inner box: 168x84 minus padding */
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 7px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+  }
+
+  .item[aria-hidden="true"] {
+    display: none;
+  }
+}

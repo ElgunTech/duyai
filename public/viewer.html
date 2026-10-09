@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <title>DuyAI · Telefon</title>
+    <style>
+      :root {
+        --bg: #0d0e10;
+        --surface: #16181b;
+        --border: #26292e;
+        --text: #f1f2f4;
+        --muted: #8b9098;
+        --me: #7c8cff;
+        --friend: #35c48a;
+        --danger: #e5534b;
+        --warning: #e3a23b;
+        color-scheme: dark;
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f6f6f4;
+          --surface: #ffffff;
+          --border: #e3e3df;
+          --text: #16181b;
+          --muted: #6b7078;
+          --me: #4f5fe0;
+          --friend: #1f9a68;
+          color-scheme: light;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          16px/1.45 system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        -webkit-text-size-adjust: 100%;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: calc(12px + env(safe-area-inset-top)) 16px 12px;
+        background: color-mix(in srgb, var(--bg) 88%, transparent);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--border);
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--muted);
+        flex: none;
+      }
+      body[data-status="live"] .dot {
+        background: var(--friend);
+        box-shadow: 0 0 0 4px color-mix(in srgb, var(--friend) 25%, transparent);
+      }
+      .status {
+        font-weight: 600;
+      }
+      .langs {
+        margin-left: auto;
+        color: var(--muted);
+        font-size: 14px;
+        white-space: nowrap;
+      }
+      .offline {
+        display: none;
+        padding: 8px 16px;
+        background: var(--warning);
+        color: #111;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      body[data-offline] .offline {
+        display: block;
+      }
+      main {
+        padding: 12px 16px calc(24px + env(safe-area-inset-bottom));
+        display: grid;
+        gap: 12px;
+      }
+      .alert {
+        border-radius: 14px;
+        padding: 14px 16px;
+        background: var(--danger);
+        color: #fff;
+        animation: pulse 1.2s ease-in-out 3;
+      }
+      .alert[data-level="warning"] {
+        background: var(--warning);
+        color: #111;
+      }
+      .alert strong {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 2px;
+      }
+      @keyframes pulse {
+        50% {
+          transform: scale(1.02);
+        }
+      }
+      .empty {
+        color: var(--muted);
+        text-align: center;
+        padding: 48px 8px;
+      }
+      .entry {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--friend);
+        border-radius: 14px;
+        padding: 12px 14px;
+      }
+      .entry[data-who="me"],
+      .entry[data-who="ai"] {
+        border-left-color: var(--me);
+      }
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+      /* The other party: their words in MY language are what I need, so they are big. */
+      .entry[data-who="friend"] .translation {
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+      .entry[data-who="friend"] .original {
+        color: var(--muted);
+        font-size: 15px;
+        margin-top: 6px;
+      }
+      .entry[data-who="me"] .original,
+      .entry[data-who="ai"] .original {
+        font-size: 17px;
+      }
+      .entry[data-who="me"] .translation,
+      .entry[data-who="ai"] .translation {
+        color: var(--muted);
+        font-size: 15px;
+        margin-top: 6px;
+      }
+      .pending {
+        color: var(--muted);
+        font-style: italic;
+      }
+      .partial {
+        border: 1px dashed var(--border);
+        border-radius: 14px;
+        padding: 10px 14px;
+        color: var(--muted);
+        font-style: italic;
+      }
+      .summary {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px 16px;
+      }
+      .summary h2 {
+        margin: 0 0 6px;
+        font-size: 18px;
+      }
+      .summary p {
+        margin: 0;
+      }
+      .muted-badge {
+        display: none;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: var(--danger);
+        color: #fff;
+      }
+      body[data-muted] .muted-badge {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body data-status="idle">
+    <header>
+      <span class="dot" aria-hidden="true"></span>
+      <span class="status" id="status">Qoşulur…</span>
+      <span class="muted-badge">Mikrofon bağlı</span>
+      <span class="langs" id="langs"></span>
+    </header>
+    <div class="offline" role="status">Kompüterlə əlaqə kəsildi, yenidən qoşulur…</div>
+    <main id="main" aria-live="polite">
+      <p class="empty">Zəng başlayanda danışıq burada görünəcək.</p>
+    </main>
+
+    <script>
+      const STATUS = {
+        idle: "Zəng yoxdur",
+        connecting: "Qoşulur…",
+        live: "Zəng gedir",
+        ended: "Zəng bitdi",
+        error: "Xəta",
+      };
+      const WHO = { me: "Mən", friend: "Qarşı tərəf", ai: "AI (sənin adından)" };
+      const main = document.getElementById("main");
+      const token = new URLSearchParams(location.search).get("t") || "";
+      let lastCount = 0;
+
+      const el = (tag, cls, text) => {
+        const node = document.createElement(tag);
+        if (cls) node.className = cls;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      };
+
+      function render(s) {
+        document.body.dataset.status = s.status || "idle";
+        document.body.toggleAttribute("data-muted", Boolean(s.muted));
+        document.getElementById("status").textContent = STATUS[s.status] || s.status || "";
+        document.getElementById("langs").textContent =
+          s.myLang && s.friendLang ? `${s.myLang.name} ⇄ ${s.friendLang.name}` : "";
+
+        const nearBottom = innerHeight + scrollY >= document.body.scrollHeight - 120;
+        const frag = document.createDocumentFragment();
+
+        for (const a of s.alerts || []) {
+          const box = el("div", "alert");
+          box.dataset.level = a.level;
+          box.setAttribute("role", "alert");
+          box.append(el("strong", "", a.level === "danger" ? "⚠ Fırıldaq təhlükəsi!" : "⚠ Diqqət"));
+          box.append(el("div", "", a.reason || ""));
+          if (a.quote) box.append(el("div", "", `“${a.quote}”`));
+          frag.append(box);
+        }
+
+        const entries = s.entries || [];
+        if (!entries.length && !s.partials?.friend && !s.partials?.me && !s.summary) {
+          frag.append(el("p", "empty", "Zəng başlayanda danışıq burada görünəcək."));
+        }
+        for (const e of entries) {
+          const card = el("article", "entry");
+          card.dataset.who = e.who;
+          card.append(el("div", "meta", `${WHO[e.who] || e.who} · ${e.time || ""}`));
+          const translation = e.translation || (e.status === "error" ? "Tərcümə alınmadı" : "");
+          if (e.who === "friend") {
+            card.append(
+              translation
+                ? el("div", "translation", translation)
+                : el("div", "translation pending", "tərcümə olunur…"),
+            );
+            card.append(el("div", "original", e.original));
+          } else {
+            card.append(el("div", "original", e.original));
+            if (translation) card.append(el("div", "translation", translation));
+          }
+          frag.append(card);
+        }
+        if (s.partials?.friend)
+          frag.append(el("div", "partial", `Qarşı tərəf: ${s.partials.friend}…`));
+        if (s.partials?.me) frag.append(el("div", "partial", `Mən: ${s.partials.me}…`));
+
+        if (s.summary) {
+          const box = el("section", "summary");
+          box.append(el("h2", "", s.summary.title || "Zəngin xülasəsi"));
+          box.append(el("p", "", s.summary.summary || ""));
+          frag.append(box);
+        }
+
+        main.replaceChildren(frag);
+        if (nearBottom || entries.length > lastCount) scrollTo(0, document.body.scrollHeight);
+        lastCount = entries.length;
+      }
+
+      function connect() {
+        const source = new EventSource(`/viewer/stream?t=${encodeURIComponent(token)}`);
+        source.onopen = () => document.body.removeAttribute("data-offline");
+        source.onmessage = (event) => render(JSON.parse(event.data));
+        source.onerror = () => document.body.setAttribute("data-offline", "");
+      }
+      connect();
+    </script>
+  </body>
+</html>

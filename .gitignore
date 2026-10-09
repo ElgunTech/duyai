@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.env
+*.log
+data/
+
+.vercel
+
+# local secrets and generated files
+.env.*
+!.env.example
+training/data/*.tmp

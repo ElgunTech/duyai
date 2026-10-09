@@ -1,0 +1,2057 @@
+{
+  "name": "Qwen2.5-1.5B + LoRA (25 nümunə)",
+  "model": "predictions_finetuned.jsonl",
+  "date": "2026-10-09T09:03:58.051Z",
+  "metrics": {
+    "cases": 24,
+    "intentAccuracy": 0.5,
+    "dateRecall": 0.3333333333333333,
+    "timeRecall": 0.8888888888888888,
+    "priceRecall": 1,
+    "commitmentPrecision": 0.3191489361702128,
+    "commitmentRecall": 0.5769230769230769,
+    "commitmentF1": 0.4109589041095891
+  },
+  "perCase": [
+    {
+      "id": "hotel-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": [
+        "tarix 2026-10-10"
+      ]
+    },
+    {
+      "id": "hotel-2-mixed",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "restaurant-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "restaurant-2-ru",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "doctor-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "tarix 2026-10-12"
+      ]
+    },
+    {
+      "id": "doctor-2-reschedule",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "meeting-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 2
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 2,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": [
+        "tarix 2026-10-10",
+        "tarix 2026-10-12"
+      ]
+    },
+    {
+      "id": "meeting-2-en",
+      "intentCorrect": false,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: appointment (gözlənilən meeting)"
+      ]
+    },
+    {
+      "id": "purchase-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "purchase-2-tr",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "tarix 2026-10-09",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "delivery-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: purchase (gözlənilən delivery)",
+        "tarix 2026-10-09"
+      ]
+    },
+    {
+      "id": "delivery-2",
+      "intentCorrect": false,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: purchase (gözlənilən delivery)",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "support-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 2,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: appointment (gözlənilən customer_support)",
+        "tarix 2026-10-10"
+      ]
+    },
+    {
+      "id": "support-2-bank",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 0,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: purchase (gözlənilən customer_support)"
+      ]
+    },
+    {
+      "id": "travel-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: purchase (gözlənilən travel)"
+      ]
+    },
+    {
+      "id": "travel-2-taxi",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "tarix 2026-10-10",
+        "saat 05:30"
+      ]
+    },
+    {
+      "id": "personal-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: restaurant_booking (gözlənilən personal)",
+        "tarix 2026-10-11"
+      ]
+    },
+    {
+      "id": "personal-2-loan",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 2
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: purchase (gözlənilən personal)",
+        "tarix 2026-10-16",
+        "tarix 2026-10-09",
+        "öhdəlik 0/2"
+      ]
+    },
+    {
+      "id": "scam-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: purchase (gözlənilən scam_attempt)",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "scam-2-prize",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 0,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: purchase (gözlənilən scam_attempt)"
+      ]
+    },
+    {
+      "id": "repair-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "tarix 2026-10-12",
+        "saat 09:00",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "course-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: course_registration (gözlənilən appointment/other)",
+        "tarix 2026-10-14"
+      ]
+    },
+    {
+      "id": "rent-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": [
+        "intent: rental (gözlənilən purchase/other)",
+        "tarix 2026-10-10",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "work-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 2
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": [
+        "tarix 2026-10-13",
+        "tarix 2026-10-12",
+        "öhdəlik 1/2"
+      ]
+    }
+  ],
+  "outputs": {
+    "hotel-1": {
+      "intent": "hotel_booking",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Şəhəri",
+          "value": "Baku"
+        },
+        {
+          "type": "date",
+          "label": "Check-in",
+          "value": "2026-10-12"
+        },
+        {
+          "type": "time",
+          "label": "Check-in saatı",
+          "value": "14:00"
+        },
+        {
+          "type": "price",
+          "label": "Gecəli qiymət",
+          "value": "80 AZN"
+        },
+        {
+          "type": "price",
+          "label": "Cəmi",
+          "value": "240 AZN"
+        },
+        {
+          "type": "person",
+          "label": "Müştərilərin sayı",
+          "value": "2"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Pasportunu WhatsAppla göndərmək",
+          "due": "bu gün",
+          "due_iso": "2026-10-09T15:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Otaq check-in - Baku",
+          "start": "2026-10-12T14:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Pasportunu whatsappla göndərmək",
+          "start": "2026-10-09T15:00"
+        },
+        {
+          "type": "map",
+          "title": "Otaq - Baku",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Otaq şəklinini saxlama",
+          "start": ""
+        }
+      ]
+    },
+    "hotel-2-mixed": {
+      "intent": "hotel_booking",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Check-in",
+          "value": "2026-10-12"
+        },
+        {
+          "type": "time",
+          "label": "Check-in saatı",
+          "value": "14:00"
+        },
+        {
+          "type": "price",
+          "label": "Otaq məbləği",
+          "value": "95 USD"
+        },
+        {
+          "type": "location",
+          "label": "Şəhəri",
+          "value": "Elə, Bakı"
+        },
+        {
+          "type": "person",
+          "label": "Müştərilərin sayı",
+          "value": "3"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Hotel konfirmanı e-posta göndərmək",
+          "due": "bu günündan sonra",
+          "due_iso": "2026-10-09T23:59"
+        },
+        {
+          "owner": "other",
+          "task": "Konfirmanı emailə göndərmək",
+          "due": "bu günündan sonra",
+          "due_iso": "2026-10-09T23:59"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Elə, 3 ümumi ototur - 12 oktobir",
+          "start": "2026-10-12T14:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Bakı ilə hotel konfirmanı e-postası gözlə",
+          "start": "2026-10-09T17:00"
+        },
+        {
+          "type": "map",
+          "title": "Elə, Bakı - 3 ümumi ototur",
+          "start": "2026-10-12T13:00"
+        },
+        {
+          "type": "email",
+          "title": "Elə ototurunu konfirmanı hazırlamış olduğumuz e-posta",
+          "start": "2026-10-09T23:59"
+        }
+      ]
+    },
+    "restaurant-1": {
+      "intent": "restaurant_booking",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Masa günü",
+          "value": "2026-10-09"
+        },
+        {
+          "type": "time",
+          "label": "Saatı",
+          "value": "20:00"
+        },
+        {
+          "type": "location",
+          "label": "Restoran",
+          "value": "Elgun Restaurant, Bakı"
+        },
+        {
+          "type": "person",
+          "label": "Dost",
+          "value": "Şam"
+        },
+        {
+          "type": "price",
+          "label": "Masa məbləği",
+          "value": "35 AZN"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Dostla 20:00 restorana 4 nəfər masasını yemək",
+          "due": "axşam saat 8-ə 4 nəfər",
+          "due_iso": "2026-10-09T20:00"
+        },
+        {
+          "owner": "other",
+          "task": "Restorandan 35 AZN ödənişini göndərmək",
+          "due": "dostla 20:00",
+          "due_iso": "2026-10-09T20:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "4 nəfərli restoranda yemək - Elgün",
+          "start": "2026-10-09T20:00"
+        },
+        {
+          "type": "reminder",
+          "title": "4 nəfərli restoranda yeməyi 15 minuterdan ibarət bildir",
+          "start": "2026-10-09T19:45"
+        },
+        {
+          "type": "map",
+          "title": "Elgun Restaurant, Bakı",
+          "start": ""
+        },
+        {
+          "type": "note",
+          "title": "Restoran 35 AZN, 4 nəfər",
+          "start": ""
+        }
+      ]
+    },
+    "restaurant-2-ru": {
+      "intent": "restaurant_booking",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Stol",
+          "value": "Şənbə, Bakı"
+        },
+        {
+          "type": "date",
+          "label": "Seans günü",
+          "value": "2026-10-11"
+        },
+        {
+          "type": "time",
+          "label": "Seans saatı",
+          "value": "19:00"
+        },
+        {
+          "type": "price",
+          "label": "Depozit",
+          "value": "50 AZN"
+        },
+        {
+          "type": "person",
+          "label": "Müştəri",
+          "value": "2"
+        },
+        {
+          "type": "reference",
+          "label": "Kartla ödənilmə vaxtı",
+          "value": "bu gün"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Stol yoxlataq",
+          "due": "bu gün köçür",
+          "due_iso": "2026-10-10T17:00"
+        },
+        {
+          "owner": "other",
+          "task": "Kartla ödənilmə vaxtı bildir",
+          "due": "bu gün",
+          "due_iso": "2026-10-11"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Restorana 2 nəfərdan stol - 19:00, depozit 50 AZN",
+          "start": "2026-10-11T19:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Bakiyyə kartla ödənilmə vaxtı ümumi bildir",
+          "start": "2026-10-11T17:00"
+        },
+        {
+          "type": "map",
+          "title": "Stol, şənbə, Bakı",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Restoran kartla ödənilmə vaxtı",
+          "start": "2026-10-11T17:00"
+        }
+      ]
+    },
+    "doctor-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Məmmədovan",
+          "value": "Bazar ertəsi saat 11:30"
+        },
+        {
+          "type": "date",
+          "label": "Qəbul günü",
+          "value": "2026-10-15"
+        },
+        {
+          "type": "time",
+          "label": "Qəbul saatı",
+          "value": "11:30"
+        },
+        {
+          "type": "price",
+          "label": "Müayinə məbləği",
+          "value": "40 AZN"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Analiz nəticəsini göndərmək",
+          "due": "bazar ertəsi saat 11:30",
+          "due_iso": "2026-10-15T11:30"
+        },
+        {
+          "owner": "other",
+          "task": "Qəbulün yoxlaşdırılması",
+          "due": "bazar ertəsi saat 11:30",
+          "due_iso": "2026-10-15T11:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Məmmədovan - qəbul",
+          "start": "2026-10-15T11:30"
+        },
+        {
+          "type": "reminder",
+          "title": "Məmmədovan analiz nəticəsini gözlə",
+          "start": "2026-10-15T11:20"
+        },
+        {
+          "type": "map",
+          "title": "Məmmədovan, Bakı",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Məmmədovan analiz nəticəsini gözlə",
+          "start": ""
+        }
+      ]
+    },
+    "doctor-2-reschedule": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Qəbul günü",
+          "value": "2026-10-15"
+        },
+        {
+          "type": "time",
+          "label": "Qəbul saatı",
+          "value": "15:00"
+        },
+        {
+          "type": "location",
+          "label": "Məkan",
+          "value": "Şəhəri, Bakı"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Xatırlatma SMS-i göndərmək",
+          "due": "çərşənbə 1 gün əvvəl",
+          "due_iso": "2026-10-14T17:00"
+        },
+        {
+          "owner": "other",
+          "task": "SMS-götürmək",
+          "due": "çərşənbə saat 3",
+          "due_iso": "2026-10-15T15:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Bakı şəhəri - xatırlatma qəbulü",
+          "start": "2026-10-15T15:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Şəhəri xatırlatma SMS-i gözlə",
+          "start": "2026-10-14T17:00"
+        },
+        {
+          "type": "map",
+          "title": "Bakı şəhəri - xatırlatma məkanı",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Şəhəri xatırlatma mesajı",
+          "start": ""
+        }
+      ]
+    },
+    "meeting-1": {
+      "intent": "meeting",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Layiyə",
+          "value": "Nizami küçəsi, Bakı"
+        },
+        {
+          "type": "time",
+          "label": "Görüş günü",
+          "value": "2026-10-09T15:00"
+        },
+        {
+          "type": "date",
+          "label": "Müvafiq günü",
+          "value": "2026-10-09"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Prezentasiyi saxla və layiyə gözlə",
+          "due": "saat 3dan beri",
+          "due_iso": "2026-10-09T13:00"
+        },
+        {
+          "owner": "other",
+          "task": "Müqaviləni bazar ertəsi göndər",
+          "due": "bazar ertəsi saat 17",
+          "due_iso": "2026-10-08T17:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Layiyə müvafikiyi görüşmə",
+          "start": "2026-10-09T15:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Layiyə prensenti saxlama",
+          "start": "2026-10-09T13:00"
+        },
+        {
+          "type": "map",
+          "title": "Nizami küçəsi, Bakı",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Bazar ertəsi müqaviləini gözlə",
+          "start": ""
+        }
+      ]
+    },
+    "meeting-2-en": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Görüş günü",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "time",
+          "label": "Görüş saatı",
+          "value": "10:30"
+        },
+        {
+          "type": "location",
+          "label": "Görüş yeri",
+          "value": "Bakı, hotel"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Report-qədər hazırla",
+          "due": "o vaxt",
+          "due_iso": ""
+        },
+        {
+          "owner": "other",
+          "task": "Reportu hazırlat",
+          "due": "10:30",
+          "due_iso": "2026-10-10T10:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Şamda hotel şəhəri görüşmə",
+          "start": "2026-10-10T10:30"
+        },
+        {
+          "type": "reminder",
+          "title": "Şamda report hazırla",
+          "start": "2026-10-10T10:00"
+        },
+        {
+          "type": "map",
+          "title": "Hotel şəhəri",
+          "start": ""
+        }
+      ]
+    },
+    "purchase-1": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "person",
+          "label": "Şəhərdost",
+          "value": "Məhsul yeməyi"
+        },
+        {
+          "type": "price",
+          "label": "Qiymət",
+          "value": "1250 AZN"
+        },
+        {
+          "type": "location",
+          "label": "Şəhər",
+          "value": "Baku"
+        },
+        {
+          "type": "date",
+          "label": "Götürmə günü",
+          "value": "2026-10-11"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Nağd alışmak",
+          "due": "sabah",
+          "due_iso": "2026-10-10T12:00"
+        },
+        {
+          "owner": "other",
+          "task": "Şəhərdostu 12 aya vaxtı kreditləmək",
+          "due": "12 aya",
+          "due_iso": "2027-10-11"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Məhsul yeməyi - 1250 AZN, Baku",
+          "start": "2026-10-11T12:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Şəhərdostunu 12 aya vaxtı kreditləmək",
+          "start": "2026-10-10T14:00"
+        },
+        {
+          "type": "map",
+          "title": "Məhsul yeməyi, Baku",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Nağd alımını bildir",
+          "start": ""
+        }
+      ]
+    },
+    "purchase-2-tr": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "price",
+          "label": "Ekrana çapı",
+          "value": "180 AZN"
+        },
+        {
+          "type": "date",
+          "label": "Götürmə günü",
+          "value": "2026-10-13"
+        },
+        {
+          "type": "time",
+          "label": "Götürmə saatı",
+          "value": "17:00"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Ekrana çapı göndərmək",
+          "due": "bu gün saat 5-ə qədər",
+          "due_iso": "2026-10-13T17:00"
+        },
+        {
+          "owner": "other",
+          "task": "Ekrana çapı 180 AZN almaq",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Ekrana çapı göndərmə",
+          "start": "2026-10-13T17:00"
+        },
+        {
+          "type": "reminder",
+          "title": "180 AZN ekrana çapı gətir",
+          "start": "2026-10-13T16:45"
+        },
+        {
+          "type": "map",
+          "title": "Ekrana çapı 180 AZN",
+          "start": "2026-10-13T17:00"
+        },
+        {
+          "type": "email",
+          "title": "Ekrana çapı 180 AZN",
+          "start": "2026-10-13T17:00"
+        }
+      ]
+    },
+    "delivery-1": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Çatdırma günü",
+          "value": "2026-10-14"
+        },
+        {
+          "type": "time",
+          "label": "Çatdırma saatı",
+          "value": "14:00"
+        },
+        {
+          "type": "price",
+          "label": "Çatdırma məbləği",
+          "value": "5 AZN"
+        },
+        {
+          "type": "location",
+          "label": "Qonşu yeri",
+          "value": "Şəki"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Sifarişi 16:00dan sonra göndərmək",
+          "due": "bu gün 16:00dan sonra",
+          "due_iso": "2026-10-14T16:00"
+        },
+        {
+          "owner": "other",
+          "task": "Kuryer 5 manatla qonşuya təxmini göndər",
+          "due": "bu gün 16:00dan sonra",
+          "due_iso": "2026-10-14T16:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Sifariş çatdırılması - Şəki",
+          "start": "2026-10-14T14:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Şəki qonşusundan sifarişi göndər",
+          "start": "2026-10-14T15:30"
+        },
+        {
+          "type": "map",
+          "title": "Şəki qonşusu",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Sifariş çatdırılması - Şəki",
+          "start": ""
+        }
+      ]
+    },
+    "delivery-2": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Çatdırılma günü",
+          "value": "2026-10-13"
+        },
+        {
+          "type": "time",
+          "label": "Çatdırılma saatı",
+          "value": "17:00"
+        },
+        {
+          "type": "price",
+          "label": "Sifariş məbləği",
+          "value": "50 AZN"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Geri bildir",
+          "due": "bazar ertəsi çatdırılır",
+          "due_iso": "2026-10-13T17:00"
+        },
+        {
+          "owner": "other",
+          "task": "Bazar ertəsi çatmaq",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Sifariş A-2290 - Çatdırma",
+          "start": "2026-10-13T17:00"
+        },
+        {
+          "type": "reminder",
+          "title": "A-2290 gəlməyi bildir",
+          "start": "2026-10-12T14:00"
+        },
+        {
+          "type": "map",
+          "title": "Bazar ertəsi çatma",
+          "start": "2026-10-13T16:30"
+        }
+      ]
+    },
+    "support-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Götürmə günü",
+          "value": "2026-10-11"
+        },
+        {
+          "type": "time",
+          "label": "Götürmə saatı",
+          "value": "10:00"
+        },
+        {
+          "type": "location",
+          "label": "Götürmə şəhəri",
+          "value": "Baku"
+        },
+        {
+          "type": "person",
+          "label": "Götürməsini gözlə vaxtı",
+          "value": "554-221"
+        },
+        {
+          "type": "reference",
+          "label": "Abonelik nömrəsi",
+          "value": "554-221"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Modem yandırma-söndürməni yoxla",
+          "due": "sabah saat 10 ilə 12 arasındakı bir saat",
+          "due_iso": "2026-10-11T10:00"
+        },
+        {
+          "owner": "other",
+          "task": "Usta gətir",
+          "due": "sabah saat 10 ilə 12 arasındakı bir saat",
+          "due_iso": "2026-10-11T10:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Modem yandırma-söndürmə - 554-221",
+          "start": "2026-10-11T10:00"
+        },
+        {
+          "type": "reminder",
+          "title": "554-221 götürməsini gözlə vaxtı yoxlama",
+          "start": "2026-10-11T09:50"
+        },
+        {
+          "type": "map",
+          "title": "554-221 modem götürmə şəhəri",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "554-221 modem yandırma-söndürməsini bildiri",
+          "start": ""
+        }
+      ]
+    },
+    "support-2-bank": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Müştəri günü",
+          "value": "2026-10-13"
+        },
+        {
+          "type": "time",
+          "label": "Geri bildirvə vaxtı",
+          "value": "14:00"
+        },
+        {
+          "type": "price",
+          "label": "Nəfərlik qiyməti",
+          "value": "10 AZN"
+        },
+        {
+          "type": "location",
+          "label": "Filial",
+          "value": "Şəxsiyyət vəsiqi"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Yeni kart yoxla",
+          "due": "filialdan sonra 5 iş günündən çatmaq",
+          "due_iso": "2026-10-13T14:00"
+        },
+        {
+          "owner": "other",
+          "task": "Bloklu kartla filialdan çıxmaq",
+          "due": "şəxsiyyət vəsiqi ilə 5 iş günündən çatmaq",
+          "due_iso": "2026-10-13T14:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Nəfərlik kart yoxla - Şəxsiyyət vəsiqi",
+          "start": "2026-10-13T14:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Bloklu kart filialdan çıxışı",
+          "start": "2026-10-13T13:30"
+        },
+        {
+          "type": "map",
+          "title": "Şəxsiyyət vəsiqi kart filiali",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Nəfərlik kart yoxla etdiyi məslahə",
+          "start": ""
+        }
+      ]
+    },
+    "travel-1": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Bileti tarixi",
+          "value": "2026-10-20"
+        },
+        {
+          "type": "time",
+          "label": "Reyi saatı",
+          "value": "07:45"
+        },
+        {
+          "type": "price",
+          "label": "Bileti qiyməti",
+          "value": "320 AZN"
+        },
+        {
+          "type": "location",
+          "label": "Bağlı şəhəri",
+          "value": "Baqaj"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Pasport məlumatlarını indir",
+          "due": "sabahdan sonra",
+          "due_iso": "2026-10-08T23:59"
+        },
+        {
+          "owner": "other",
+          "task": "Götürməsini bildir",
+          "due": "bileti alması qəbulündən 1 saat yoxdur",
+          "due_iso": "2026-10-20T07:46"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Bileti göndərmə",
+          "start": "2026-10-20T07:45"
+        },
+        {
+          "type": "reminder",
+          "title": "Pasport məlumatlarını indirmək",
+          "start": "2026-10-08T23:59"
+        },
+        {
+          "type": "map",
+          "title": "Bakı–İstanbul bileti",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Bileti götürməsini bildir",
+          "start": ""
+        }
+      ]
+    },
+    "travel-2-taxi": {
+      "intent": "travel",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Şəhər",
+          "value": "Baku"
+        },
+        {
+          "type": "date",
+          "label": "Taksi günü",
+          "value": "2026-10-12"
+        },
+        {
+          "type": "time",
+          "label": "Taksi saatı",
+          "value": "17:30"
+        },
+        {
+          "type": "price",
+          "label": "Taksi məbləği",
+          "value": "25 AZN"
+        },
+        {
+          "type": "person",
+          "label": "Sürücü",
+          "value": "Mehmet"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Taksi al",
+          "due": "5:20",
+          "due_iso": "2026-10-12T17:20"
+        },
+        {
+          "owner": "other",
+          "task": "Sürücu zəng et",
+          "due": "5:20",
+          "due_iso": "2026-10-12T17:20"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Taksi Baku 5:30",
+          "start": "2026-10-12T17:30"
+        },
+        {
+          "type": "reminder",
+          "title": "Taksi zəngini gözlə",
+          "start": "2026-10-12T17:20"
+        },
+        {
+          "type": "map",
+          "title": "Şəhər ilə taksını çatmaq",
+          "start": ""
+        },
+        {
+          "type": "note",
+          "title": "25 AZN takaş, Mehmet ümumi zəng etdi",
+          "start": ""
+        }
+      ]
+    },
+    "personal-1": {
+      "intent": "restaurant_booking",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Ad günü",
+          "value": "2026-10-14"
+        },
+        {
+          "type": "time",
+          "label": "Götə vaxtı",
+          "value": "19:00"
+        },
+        {
+          "type": "location",
+          "label": "Bazar",
+          "value": "Qardäş, Bakı"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Tortunu almaq",
+          "due": "bazardan sonra",
+          "due_iso": "2026-10-15T20:00"
+        },
+        {
+          "owner": "other",
+          "task": "Götəni göndərmək",
+          "due": "ad günündan 7-da",
+          "due_iso": "2026-10-14T19:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Mütləki tortu yeməyi",
+          "start": "2026-10-14T19:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Qardäşda tortunu almaq",
+          "start": "2026-10-14T18:30"
+        },
+        {
+          "type": "map",
+          "title": "Bazar - Qardäş",
+          "start": ""
+        },
+        {
+          "type": "note",
+          "title": "Mütləki tortu yeməyi qarışıq",
+          "start": ""
+        }
+      ]
+    },
+    "personal-2-loan": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "person",
+          "label": "Müştəri",
+          "value": "Elgün"
+        },
+        {
+          "type": "price",
+          "label": "Ümumi mabnda qiymət",
+          "value": "200 AZN"
+        },
+        {
+          "type": "date",
+          "label": "Geri bildirvə günü",
+          "value": "2026-10-13"
+        },
+        {
+          "type": "time",
+          "label": "Borç kartına göndərmə vaxtı",
+          "value": "15:00"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Kartı gətir",
+          "due": "axşam kartına",
+          "due_iso": "2026-10-13T15:00"
+        },
+        {
+          "owner": "other",
+          "task": "Borc kartına gözlə",
+          "due": "bu cəmi qəbulündən 15 vaxtdan ibarə",
+          "due_iso": "2026-10-13T14:45"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Elgunun 200 AZN borç kartını göndər",
+          "start": "2026-10-13T15:00"
+        },
+        {
+          "type": "reminder",
+          "title": "200 AZN borç kartını gətirməsini unutma",
+          "start": "2026-10-13T14:45"
+        },
+        {
+          "type": "map",
+          "title": "Elgünün 200 AZN borç kartını göndərmə yeri",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "200 AZN borç kartını gətirməsini bildir",
+          "start": ""
+        }
+      ]
+    },
+    "scam-1": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Təhlükəsizlik günü",
+          "value": "2026-10-13"
+        },
+        {
+          "type": "time",
+          "label": "Geri bildiri vaxtı",
+          "value": "15:00"
+        },
+        {
+          "type": "price",
+          "label": "Şəki ödəniş məbləği",
+          "value": "15 AZN"
+        },
+        {
+          "type": "person",
+          "label": "Bərbər",
+          "value": "Banka"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "SMS kodu göndərmək",
+          "due": "görüşündən 15 vaxt",
+          "due_iso": "2026-10-13T15:00"
+        },
+        {
+          "owner": "other",
+          "task": "Telefonuza SMS kodunu gözləmək",
+          "due": "görüşündən 15 vaxt",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Şəki ödənişini bildir",
+          "start": "2026-10-13T15:00"
+        },
+        {
+          "type": "reminder",
+          "title": "SMS kodunu gözlə",
+          "start": "2026-10-13T14:45"
+        },
+        {
+          "type": "map",
+          "title": "Şəki şəhəri",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Şəki ödənişini bildir",
+          "start": ""
+        }
+      ]
+    },
+    "scam-2-prize": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "person",
+          "label": "Müştərilərin adı",
+          "value": "Udmus"
+        },
+        {
+          "type": "price",
+          "label": "Avtomobillərin qiyməti",
+          "value": "150 AZN"
+        },
+        {
+          "type": "location",
+          "label": "Müştərilərin yeri",
+          "value": "Baku"
+        },
+        {
+          "type": "date",
+          "label": "Səhifədən əvvəl çatmaq",
+          "value": "2026-10-07"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "150 AZN avtomobillərin əməliyyatını göndərmək",
+          "due": "sabahdan sonra",
+          "due_iso": "2026-10-09T10:00"
+        },
+        {
+          "owner": "other",
+          "task": "150 AZN avtomobillərin əməliyyatını göndərmək",
+          "due": "sabahdan sonra",
+          "due_iso": "2026-10-09T10:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Udmus əməliyyatları - 150 AZN",
+          "start": "2026-10-09T10:00"
+        },
+        {
+          "type": "reminder",
+          "title": "150 AZN avtomobillərin əməliyyatını gözlə",
+          "start": "2026-10-08T14:00"
+        },
+        {
+          "type": "map",
+          "title": "Udmus əməliyyatları, Baku",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "150 AZN avtomobillərin əməliyyatını gözlə",
+          "start": ""
+        }
+      ]
+    },
+    "repair-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "person",
+          "label": "Usta",
+          "value": "Bazar ertəsi saat 9"
+        },
+        {
+          "type": "date",
+          "label": "Götürmə günü",
+          "value": "2026-10-11"
+        },
+        {
+          "type": "time",
+          "label": "Götürmə saatı",
+          "value": "17:00"
+        },
+        {
+          "type": "price",
+          "label": "Bazan məbləği",
+          "value": "30 AZN"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Kombiyə götür",
+          "due": "bazar ertəsi saat 9",
+          "due_iso": "2026-10-11T17:00"
+        },
+        {
+          "owner": "other",
+          "task": "Bazar 30 AZN çatma et",
+          "due": "götürmə günündən 30 mana çatmaq",
+          "due_iso": "2026-10-11T20:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Kombiyə götür - Bazar ertəsi saat 9",
+          "start": "2026-10-11T17:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Bazar 30 AZN çatma",
+          "start": "2026-10-11T19:30"
+        },
+        {
+          "type": "map",
+          "title": "Kombiyə yeri",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "Kombiyə götür ümumi məbləği",
+          "start": ""
+        }
+      ]
+    },
+    "course-1": {
+      "intent": "course_registration",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Kurs yeri",
+          "value": "Gələn çərşənbə"
+        },
+        {
+          "type": "date",
+          "label": "Dostluq günü",
+          "value": "2026-10-12"
+        },
+        {
+          "type": "time",
+          "label": "Sınaq dərisini başlama vaxtı",
+          "value": "18:30"
+        },
+        {
+          "type": "price",
+          "label": "Sınaq dərisi məbləği",
+          "value": "120 AZN"
+        },
+        {
+          "type": "person",
+          "label": "Müştərilərin adı",
+          "value": "Qrup"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Sınaq dərisini göndərmək",
+          "due": "cümə saat 18:30",
+          "due_iso": "2026-10-12T18:30"
+        },
+        {
+          "owner": "other",
+          "task": "Kursu hazırlatmaq",
+          "due": "gələn çərşənbə və 120 AZN",
+          "due_iso": "2026-10-12T18:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Ingilis dili kursu - Qrup",
+          "start": "2026-10-12T18:30"
+        },
+        {
+          "type": "map",
+          "title": "Gələn çərşənbə, kurs yeri",
+          "start": ""
+        },
+        {
+          "type": "note",
+          "title": "Sınaq dərisi 120 AZN, gələn çərşənbə saat 18:30",
+          "start": ""
+        }
+      ]
+    },
+    "rent-1": {
+      "intent": "rental",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Kiraya edilib məkan",
+          "value": "Nərimanovdakı"
+        },
+        {
+          "type": "price",
+          "label": "Məkan qiyməti",
+          "value": "600 AZN"
+        },
+        {
+          "type": "date",
+          "label": "Götürmə günü",
+          "value": "2026-10-18"
+        },
+        {
+          "type": "time",
+          "label": "Götürmə saatı",
+          "value": "18:00"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Kirayı göndərmək",
+          "due": "sabah saat 18:00",
+          "due_iso": "2026-10-18T18:00"
+        },
+        {
+          "owner": "other",
+          "task": "Depozit üstündən gətirmək",
+          "due": "başqa yeri 600 AZN",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Kirayə götürmə - Nərimanovdakı",
+          "start": "2026-10-18T18:00"
+        },
+        {
+          "type": "map",
+          "title": "Kiraya edilib məkan",
+          "start": ""
+        },
+        {
+          "type": "reminder",
+          "title": "Kirayı göndərmək sabah 18:00dan sonra",
+          "start": "2026-10-18T17:30"
+        }
+      ]
+    },
+    "work-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Müsluhmanlı şəhəri, Bakı",
+          "value": "2026-10-11"
+        },
+        {
+          "type": "time",
+          "label": "Götürmə vaxtı",
+          "value": "11:00"
+        },
+        {
+          "type": "location",
+          "label": "CV-ni yeməyi",
+          "value": "CV-ni yeməyi, Müsluhmanlı"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Portfolionu əvvəlcən email-lə göndərmək",
+          "due": "çərşənbə axşamı saat 11",
+          "due_iso": "2026-10-11T11:00"
+        },
+        {
+          "owner": "other",
+          "task": "CV-ni müsuhhibə yeməyi göndərmək",
+          "due": "bazar ertəsinə qədər",
+          "due_iso": "2026-10-11T11:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "CV-ni müsuhhibə yeməyi",
+          "start": "2026-10-11T11:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Portfolionu əvvəlcən gözlə",
+          "start": "2026-10-11T10:30"
+        },
+        {
+          "type": "map",
+          "title": "CV-ni yeməyi, Müsluhmanlı",
+          "start": ""
+        },
+        {
+          "type": "email",
+          "title": "CV-portfolionu, müsuhhibə yeməyi",
+          "start": ""
+        }
+      ]
+    }
+  }
+}

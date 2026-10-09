@@ -1,0 +1,1124 @@
+{
+  "name": "Qwen2.5-1.5B (baza)",
+  "model": "predictions_base.jsonl",
+  "date": "2026-10-09T08:28:47.113Z",
+  "metrics": {
+    "cases": 24,
+    "intentAccuracy": 0.5833333333333334,
+    "dateRecall": 0.20833333333333334,
+    "timeRecall": 0.5,
+    "priceRecall": 0.5333333333333333,
+    "commitmentPrecision": 0,
+    "commitmentRecall": 0,
+    "commitmentF1": 0
+  },
+  "perCase": [
+    {
+      "id": "hotel-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-10",
+        "saat 14:00",
+        "qiymət 240",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "hotel-2-mixed",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": [
+        "tarix 2026-10-12",
+        "saat 14:00",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "restaurant-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: purchase (gözlənilən restaurant_booking)",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "restaurant-2-ru",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: appointment (gözlənilən restaurant_booking)",
+        "tarix 2026-10-10",
+        "qiymət 50",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "doctor-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-12",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "doctor-2-reschedule",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-14",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "meeting-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 2
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 2,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: appointment (gözlənilən meeting)",
+        "tarix 2026-10-10",
+        "tarix 2026-10-12",
+        "saat 15:00",
+        "öhdəlik 0/2"
+      ]
+    },
+    {
+      "id": "meeting-2-en",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: appointment (gözlənilən meeting)",
+        "tarix 2026-10-10",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "purchase-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-10",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "purchase-2-tr",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "saat 17:00",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "delivery-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "qiymət 5",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "delivery-2",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-12",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "support-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 2,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: meeting (gözlənilən customer_support)",
+        "tarix 2026-10-10",
+        "öhdəlik 0/2"
+      ]
+    },
+    {
+      "id": "support-2-bank",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 0,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: appointment (gözlənilən customer_support)"
+      ]
+    },
+    {
+      "id": "travel-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "qiymət 320",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "travel-2-taxi",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-10",
+        "saat 05:30",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "personal-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: appointment (gözlənilən personal)",
+        "tarix 2026-10-11",
+        "saat 19:00",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "personal-2-loan",
+      "intentCorrect": false,
+      "dates": {
+        "found": 1,
+        "total": 2
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 2,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: purchase (gözlənilən personal)",
+        "tarix 2026-10-16",
+        "öhdəlik 0/2"
+      ]
+    },
+    {
+      "id": "scam-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "scam-2-prize",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 0,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 0,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: purchase (gözlənilən scam_attempt)",
+        "qiymət 150"
+      ]
+    },
+    {
+      "id": "repair-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-12",
+        "saat 09:00",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "course-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-14",
+        "qiymət 120",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "rent-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 0,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 1,
+        "predicted": 0
+      },
+      "misses": [
+        "intent: appointment (gözlənilən purchase/other)",
+        "tarix 2026-10-10",
+        "saat 18:00",
+        "qiymət 600",
+        "öhdəlik 0/1"
+      ]
+    },
+    {
+      "id": "work-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 2
+      },
+      "times": {
+        "found": 0,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 2,
+        "predicted": 0
+      },
+      "misses": [
+        "tarix 2026-10-13",
+        "tarix 2026-10-12",
+        "saat 11:00",
+        "öhdəlik 0/2"
+      ]
+    }
+  ],
+  "outputs": {
+    "hotel-1": {
+      "intent": "hotel_booking",
+      "entities": [
+        {
+          "type": "hotel",
+          "label": "Pasportun",
+          "value": ""
+        },
+        {
+          "type": "check_in_date",
+          "label": "",
+          "value": "2"
+        },
+        {
+          "type": "check_out_date",
+          "label": "",
+          "value": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Pasportun check-in",
+          "start": "2026-10-09T10:00:00+05:00"
+        }
+      ]
+    },
+    "hotel-2-mixed": {
+      "intent": "hotel_booking",
+      "entities": [
+        {
+          "type": "hotel",
+          "label": "Hotel Name",
+          "value": "Not specified"
+        },
+        {
+          "type": "check_in_date",
+          "label": "Check-In Date",
+          "value": "October 12, 2026"
+        },
+        {
+          "type": "room_type",
+          "label": "Room Type",
+          "value": "Standard"
+        },
+        {
+          "type": "price",
+          "label": "Price",
+          "value": "$95"
+        }
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Confirm hotel booking via email",
+          "due": "Friday 09 October 2026 10:00",
+          "due_iso": "2026-10-09T10:00:00+04:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Hotel Booking Confirmation",
+          "start": "2026-10-09T10:00:00+04:00"
+        },
+        {
+          "type": "email",
+          "subject": "Hotel Booking Confirmation",
+          "body": "Dear [Recipient's Name],\n\nYour hotel booking has been confirmed for October 12, 2026.\nThe room type is Standard and the price is $95.\nPlease find attached your confirmation email.\n\nBest regards,\n[Your Name]"
+        }
+      ]
+    },
+    "restaurant-1": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "restaurant",
+          "label": "restaurant",
+          "value": "Elgun's Restaurant"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Restaurant Booking",
+          "start": "2026-10-09T20:00:00+04:00"
+        }
+      ]
+    },
+    "restaurant-2-ru": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "restaurant",
+          "value": "unknown"
+        },
+        {
+          "type": "time",
+          "label": "appointment_time",
+          "value": "19:00"
+        }
+      ],
+      "commitments": [],
+      "actions": []
+    },
+    "doctor-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "restaurant",
+          "label": "Bazar",
+          "value": "11:30"
+        },
+        {
+          "type": "currency",
+          "label": "manat",
+          "value": "40"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Appointment at Bazar",
+          "start": "2026-10-09T11:30:00+05:00"
+        }
+      ]
+    },
+    "doctor-2-reschedule": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "restaurant",
+          "value": "unknown"
+        },
+        {
+          "type": "time",
+          "label": "appointment_time",
+          "value": "15:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Appointment",
+          "start": "2026-10-15T15:00:00Z"
+        }
+      ]
+    },
+    "meeting-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Nizami",
+          "value": "küçük şehrin"
+        },
+        {
+          "type": "time",
+          "label": "appointment_time",
+          "value": "3 AM"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Appointment",
+          "start": "2026-10-09T03:00:00Z"
+        }
+      ]
+    },
+    "meeting-2-en": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "client",
+          "label": "Friend",
+          "value": ""
+        },
+        {
+          "type": "date",
+          "label": "deadline",
+          "value": "10:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Appointment",
+          "start": "2026-10-09T10:30:00+04:00"
+        }
+      ]
+    },
+    "purchase-1": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "currency",
+          "label": "manat",
+          "value": "1250"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Purchase of 1250 manat",
+          "start": "2026-10-09T10:00:00+04:00"
+        }
+      ]
+    },
+    "purchase-2-tr": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "currency",
+          "label": "manat",
+          "value": "180"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Purchase of Original Screen",
+          "start": "2026-10-09T10:00:00+04:00"
+        }
+      ]
+    },
+    "delivery-1": {
+      "intent": "delivery",
+      "entities": [
+        {
+          "type": "customer_service",
+          "label": "suggestion",
+          "value": "to inform about the delivery time and cost"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Delivery Confirmation",
+          "start": "2026-10-09T14:00:00+05:00"
+        },
+        {
+          "type": "reminder",
+          "title": "Delivery Reminder",
+          "start": "2026-10-09T13:00:00+05:00"
+        }
+      ]
+    },
+    "delivery-2": {
+      "intent": "delivery",
+      "entities": [
+        {
+          "type": "restaurant",
+          "label": "Bazar",
+          "value": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Delivery Confirmation",
+          "start": "2026-10-09T10:00:00+05:00"
+        }
+      ]
+    },
+    "support-1": {
+      "intent": "meeting",
+      "entities": [
+        {
+          "type": "location",
+          "label": "restaurant",
+          "value": "unknown"
+        },
+        {
+          "type": "time",
+          "label": "appointment_time",
+          "value": "10:00 AM - 12:00 PM"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Appointment",
+          "start": "2026-10-09T10:00:00Z"
+        }
+      ]
+    },
+    "support-2-bank": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "filiala",
+          "value": ""
+        },
+        {
+          "type": "price",
+          "label": "10 manat",
+          "value": ""
+        }
+      ],
+      "commitments": [],
+      "actions": []
+    },
+    "travel-1": {
+      "intent": "travel",
+      "entities": [
+        {
+          "type": "flight",
+          "label": "Bakı-İstanbul",
+          "value": "20 oktyabr"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Flight Booking",
+          "start": "2026-10-20T07:45:00+04:00"
+        }
+      ]
+    },
+    "travel-2-taxi": {
+      "intent": "travel",
+      "entities": [
+        {
+          "type": "restaurant",
+          "label": "taxis",
+          "value": "salam"
+        },
+        {
+          "type": "currency",
+          "label": "manat",
+          "value": "25"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Taksi reservasi",
+          "start": "2026-10-09T10:00:00+04:00"
+        }
+      ]
+    },
+    "personal-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "bazar",
+          "value": ""
+        },
+        {
+          "type": "time",
+          "label": "ad günümdür",
+          "value": "7"
+        }
+      ],
+      "commitments": [],
+      "actions": []
+    },
+    "personal-2-loan": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "currency",
+          "label": "manat",
+          "value": "200"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Payment Confirmation",
+          "start": "2026-10-09T10:00:00+04:00"
+        }
+      ]
+    },
+    "scam-1": {
+      "intent": "scam_attempt",
+      "entities": [
+        {
+          "type": "other",
+          "label": "SMS code",
+          "value": "friend"
+        }
+      ],
+      "actions": [
+        {
+          "type": "email",
+          "title": "Banka təhlükəsizlik xidmət",
+          "start": "2026-10-09T10:00:00+05:00"
+        }
+      ]
+    },
+    "scam-2-prize": {
+      "intent": "purchase",
+      "entities": [
+        {
+          "type": "product",
+          "label": "automobile",
+          "value": "udmus"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Automobile Purchase",
+          "start": "2026-10-09T10:00:00+04:00"
+        }
+      ]
+    },
+    "repair-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "bazar",
+          "value": ""
+        },
+        {
+          "type": "price",
+          "label": "30 manat",
+          "value": ""
+        }
+      ],
+      "commitments": [],
+      "actions": []
+    },
+    "course-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Sınaq dersi",
+          "value": ""
+        },
+        {
+          "type": "time",
+          "label": "Cümə saat 18:30",
+          "value": "18:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Sınaq dersi",
+          "start": "2026-10-09T18:30:00+04:00"
+        }
+      ]
+    },
+    "rent-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "ev",
+          "value": "Nərimanovdakı"
+        }
+      ],
+      "commitments": [],
+      "actions": []
+    },
+    "work-1": {
+      "intent": "appointment",
+      "entities": [
+        {
+          "type": "location",
+          "label": "CV",
+          "value": ""
+        },
+        {
+          "type": "time",
+          "label": "axşam",
+          "value": "11"
+        },
+        {
+          "type": "time",
+          "label": "müsahibəyə",
+          "value": "gələ"
+        }
+      ],
+      "commitments": [],
+      "actions": []
+    }
+  }
+}

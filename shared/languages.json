@@ -1,0 +1,192 @@
+{
+  "az": {
+    "name": "Azərbaycanca",
+    "englishName": "Azerbaijani",
+    "locale": "az-AZ",
+    "voices": {
+      "f": "az-AZ-BanuNeural",
+      "m": "az-AZ-BabekNeural"
+    }
+  },
+  "de": {
+    "name": "Almanca",
+    "englishName": "German",
+    "locale": "de-DE",
+    "voices": {
+      "f": "de-DE-KatjaNeural",
+      "m": "de-DE-ConradNeural"
+    }
+  },
+  "en": {
+    "name": "İngiliscə",
+    "englishName": "English",
+    "locale": "en-US",
+    "voices": {
+      "f": "en-US-JennyNeural",
+      "m": "en-US-GuyNeural"
+    }
+  },
+  "ru": {
+    "name": "Rusca",
+    "englishName": "Russian",
+    "locale": "ru-RU",
+    "voices": {
+      "f": "ru-RU-SvetlanaNeural",
+      "m": "ru-RU-DmitryNeural"
+    }
+  },
+  "tr": {
+    "name": "Türkcə",
+    "englishName": "Turkish",
+    "locale": "tr-TR",
+    "voices": {
+      "f": "tr-TR-EmelNeural",
+      "m": "tr-TR-AhmetNeural"
+    }
+  },
+  "fr": {
+    "name": "Fransızca",
+    "englishName": "French",
+    "locale": "fr-FR",
+    "voices": {
+      "f": "fr-FR-DeniseNeural",
+      "m": "fr-FR-HenriNeural"
+    }
+  },
+  "ar": {
+    "name": "Ərəbcə",
+    "englishName": "Arabic",
+    "locale": "ar-SA",
+    "voices": {
+      "f": "ar-SA-ZariyahNeural",
+      "m": "ar-SA-HamedNeural"
+    }
+  },
+  "es": {
+    "name": "İspanca",
+    "englishName": "Spanish",
+    "locale": "es-ES",
+    "voices": {
+      "f": "es-ES-ElviraNeural",
+      "m": "es-ES-AlvaroNeural"
+    }
+  },
+  "it": {
+    "name": "İtalyanca",
+    "englishName": "Italian",
+    "locale": "it-IT",
+    "voices": {
+      "f": "it-IT-ElsaNeural",
+      "m": "it-IT-DiegoNeural"
+    }
+  },
+  "pt": {
+    "name": "Portuqalca",
+    "englishName": "Portuguese",
+    "locale": "pt-BR",
+    "voices": {
+      "f": "pt-BR-FranciscaNeural",
+      "m": "pt-BR-AntonioNeural"
+    }
+  },
+  "zh": {
+    "name": "Çincə",
+    "englishName": "Chinese (Mandarin)",
+    "locale": "zh-CN",
+    "voices": {
+      "f": "zh-CN-XiaoxiaoNeural",
+      "m": "zh-CN-YunxiNeural"
+    },
+    "translator": "zh-Hans"
+  },
+  "ja": {
+    "name": "Yaponca",
+    "englishName": "Japanese",
+    "locale": "ja-JP",
+    "voices": {
+      "f": "ja-JP-NanamiNeural",
+      "m": "ja-JP-KeitaNeural"
+    }
+  },
+  "ko": {
+    "name": "Koreyaca",
+    "englishName": "Korean",
+    "locale": "ko-KR",
+    "voices": {
+      "f": "ko-KR-SunHiNeural",
+      "m": "ko-KR-InJoonNeural"
+    }
+  },
+  "hi": {
+    "name": "Hindcə",
+    "englishName": "Hindi",
+    "locale": "hi-IN",
+    "voices": {
+      "f": "hi-IN-AnanyaNeural",
+      "m": "hi-IN-AaravNeural"
+    }
+  },
+  "fa": {
+    "name": "Farsca",
+    "englishName": "Persian",
+    "locale": "fa-IR",
+    "voices": {
+      "f": "fa-IR-DilaraNeural",
+      "m": "fa-IR-FaridNeural"
+    }
+  },
+  "uk": {
+    "name": "Ukraynaca",
+    "englishName": "Ukrainian",
+    "locale": "uk-UA",
+    "voices": {
+      "f": "uk-UA-PolinaNeural",
+      "m": "uk-UA-OstapNeural"
+    }
+  },
+  "kk": {
+    "name": "Qazaxca",
+    "englishName": "Kazakh",
+    "locale": "kk-KZ",
+    "voices": {
+      "f": "kk-KZ-AigulNeural",
+      "m": "kk-KZ-DauletNeural"
+    }
+  },
+  "uz": {
+    "name": "Özbəkcə",
+    "englishName": "Uzbek",
+    "locale": "uz-UZ",
+    "voices": {
+      "f": "uz-UZ-MadinaNeural",
+      "m": "uz-UZ-SardorNeural"
+    }
+  },
+  "pl": {
+    "name": "Polyakca",
+    "englishName": "Polish",
+    "locale": "pl-PL",
+    "voices": {
+      "f": "pl-PL-AgnieszkaNeural",
+      "m": "pl-PL-MarekNeural"
+    }
+  },
+  "nl": {
+    "name": "Niderlandca",
+    "englishName": "Dutch",
+    "locale": "nl-NL",
+    "voices": {
+      "f": "nl-NL-FennaNeural",
+      "m": "nl-NL-MaartenNeural"
+    }
+  },
+  "he": {
+    "name": "İvritcə",
+    "englishName": "Hebrew",
+    "locale": "he-IL",
+    "voices": {
+      "f": "he-IL-HilaNeural",
+      "m": "he-IL-AvriNeural"
+    }
+  }
+}

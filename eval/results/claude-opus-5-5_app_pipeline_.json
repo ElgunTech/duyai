@@ -1,0 +1,2035 @@
+{
+  "name": "claude-opus-5-5 (app pipeline)",
+  "model": "claude-opus-5-5",
+  "date": "2026-10-09T07:56:53.736Z",
+  "metrics": {
+    "cases": 24,
+    "intentAccuracy": 0.9583333333333334,
+    "dateRecall": 1,
+    "timeRecall": 1,
+    "priceRecall": 1,
+    "commitmentPrecision": 0.7647058823529411,
+    "commitmentRecall": 1,
+    "commitmentF1": 0.8666666666666666
+  },
+  "perCase": [
+    {
+      "id": "hotel-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "hotel-2-mixed",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "restaurant-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "restaurant-2-ru",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "doctor-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "doctor-2-reschedule",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "meeting-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 2,
+        "total": 2
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 2,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "meeting-2-en",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "purchase-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "purchase-2-tr",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "delivery-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "delivery-2",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "support-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 2,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "support-2-bank",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 0,
+        "predicted": 0
+      },
+      "misses": []
+    },
+    {
+      "id": "travel-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "travel-2-taxi",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "personal-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "personal-2-loan",
+      "intentCorrect": true,
+      "dates": {
+        "found": 2,
+        "total": 2
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 2,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "scam-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "scam-2-prize",
+      "intentCorrect": true,
+      "dates": {
+        "found": 0,
+        "total": 0
+      },
+      "times": {
+        "found": 0,
+        "total": 0
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 0,
+        "gold": 0,
+        "predicted": 0
+      },
+      "misses": []
+    },
+    {
+      "id": "repair-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": []
+    },
+    {
+      "id": "course-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 1
+      },
+      "misses": []
+    },
+    {
+      "id": "rent-1",
+      "intentCorrect": false,
+      "dates": {
+        "found": 1,
+        "total": 1
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 1,
+        "total": 1
+      },
+      "commitments": {
+        "matched": 1,
+        "gold": 1,
+        "predicted": 2
+      },
+      "misses": ["intent: appointment (gözlənilən purchase/other)"]
+    },
+    {
+      "id": "work-1",
+      "intentCorrect": true,
+      "dates": {
+        "found": 2,
+        "total": 2
+      },
+      "times": {
+        "found": 1,
+        "total": 1
+      },
+      "prices": {
+        "found": 0,
+        "total": 0
+      },
+      "commitments": {
+        "matched": 2,
+        "gold": 2,
+        "predicted": 2
+      },
+      "misses": []
+    }
+  ],
+  "outputs": {
+    "restaurant-1": {
+      "title": "Bu axşam üçün dörd nəfərlik masa sifarişi",
+      "intent": "restaurant_booking",
+      "outcome": "SİFARİŞ QƏBUL EDİLDİ (təsdiq gözlənilir)",
+      "summary": "Elgün bu axşam saat 20:00-a dörd nəfərlik masa sifariş etmək üçün zəng etdi. Qarşı tərəf vaxtı və nəfər sayını təkrarlayıb adını soruşdu. Elgün gecikəcəkləri təqdirdə zəng edəcəyini bildirdi.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Tarix",
+          "value": "2026-10-09"
+        },
+        {
+          "type": "time",
+          "label": "Saat",
+          "value": "20:00"
+        },
+        {
+          "type": "other",
+          "label": "Nəfər sayı",
+          "value": "4"
+        },
+        {
+          "type": "person",
+          "label": "Sifariş edənin adı",
+          "value": "Elgün"
+        }
+      ],
+      "agreements": ["Masa bu axşam saat 20:00-a dörd nəfər üçün Elgün adına sifariş olunur"],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Gecikəcəyiksə restorana zəng etmək",
+          "due": "bu axşam saat 20:00-dan əvvəl",
+          "due_iso": "2026-10-09T20:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Restoranda şam yeməyi (4 nəfər)",
+          "details": "Masa Elgün adına, 4 nəfər. Gecikəcəyiksə restorana zəng etmək.",
+          "start": "2026-10-09T20:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Sifarişin rəsmi təsdiqi zəng zamanı səslənmədi",
+        "Restoranın adı və ünvanı qeyd olunmadı"
+      ]
+    },
+    "hotel-2-mixed": {
+      "title": "12 oktyabr üçün otel bronu",
+      "intent": "hotel_booking",
+      "outcome": "BRON RAZILAŞDIRILDI",
+      "summary": "Mən dostumdan 12 oktyabr üçün bron etməsini, check-in vaxtının saat 14:00 olmasını istədim. Dost 12 oktyabr üçün standart otağı 95 dollara təsdiqlədi. Dost təsdiqi e-poçtla göndərəcəyini dedi.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Check-in tarixi",
+          "value": "2026-10-12"
+        },
+        {
+          "type": "time",
+          "label": "Check-in vaxtı",
+          "value": "14:00"
+        },
+        {
+          "type": "price",
+          "label": "Standart otaq qiyməti",
+          "value": "95 dollar"
+        },
+        {
+          "type": "other",
+          "label": "Otaq tipi",
+          "value": "Standart otaq"
+        }
+      ],
+      "agreements": [
+        "Bron 12 oktyabr üçün edilir",
+        "Check-in saat 14:00",
+        "Standart otaq, qiyməti 95 dollar"
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Bron təsdiqini e-poçtla göndərmək",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Otelə check-in",
+          "details": "Standart otaq, 95 dollar. Təsdiq e-poçtla gələcək.",
+          "start": "2026-10-12T14:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "note",
+          "title": "Bron detalları",
+          "details": "12 oktyabr 2026, standart otaq, 95 dollar, check-in saat 14:00. Təsdiq e-poçtla göndəriləcək.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Otelin adı və ünvanı bildirilməyib",
+        "Check-out tarixi və gecələrin sayı razılaşdırılmayıb",
+        "95 dolların bir gecə üçün, yoxsa ümumi qiymət olduğu aydın deyil",
+        "Ödənişin necə və nə vaxt ediləcəyi razılaşdırılmayıb"
+      ]
+    },
+    "hotel-1": {
+      "title": "Üç gecəlik ikinəfərlik otaq bronu",
+      "intent": "hotel_booking",
+      "outcome": "OTAQ SAXLANILDI",
+      "summary": "Zəng edən 10 oktyabrdan başlayaraq üç gecəlik ikinəfərlik otaq istədi. Qarşı tərəf gecəsinin 80 manat, cəmi 240 manat olduğunu və check-in-in saat 14:00-dan başladığını bildirdi. Zəng edən otağın saxlanılmasını istədi və pasportun şəklini bu gün WhatsApp ilə göndərəcəyini dedi.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Giriş tarixi",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "date",
+          "label": "Çıxış tarixi",
+          "value": "2026-10-13"
+        },
+        {
+          "type": "price",
+          "label": "Gecəlik qiymət",
+          "value": "80 manat"
+        },
+        {
+          "type": "price",
+          "label": "Ümumi məbləğ",
+          "value": "240 manat"
+        },
+        {
+          "type": "time",
+          "label": "Check-in",
+          "value": "14:00-dan"
+        },
+        {
+          "type": "other",
+          "label": "Otaq",
+          "value": "İkinəfərlik, 3 gecə"
+        }
+      ],
+      "agreements": [
+        "İkinəfərlik otaq 10 oktyabrdan 3 gecəlik saxlanılır",
+        "Qiymət gecəsi 80 manat, cəmi 240 manat",
+        "Check-in saat 14:00-dan"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Pasportun şəklini WhatsApp ilə göndərmək",
+          "due": "bu gün",
+          "due_iso": "2026-10-09"
+        },
+        {
+          "owner": "other",
+          "task": "Otağı saxlamaq",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "reminder",
+          "title": "Pasport şəklini WhatsApp ilə göndər",
+          "details": "Otel bronu üçün pasportun şəklini WhatsApp ilə göndərmək",
+          "start": "2026-10-09T12:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "calendar",
+          "title": "Oteldə qalma (3 gecə)",
+          "details": "İkinəfərlik otaq, gecəsi 80 manat, cəmi 240 manat. Check-in 14:00-dan.",
+          "start": "2026-10-10T14:00",
+          "end": "2026-10-13",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "note",
+          "title": "Otel bronu detalları",
+          "details": "İkinəfərlik otaq, 10–13 oktyabr (3 gecə), gecəsi 80 manat, cəmi 240 manat, check-in 14:00-dan.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Ödənişin vaxtı və üsulu razılaşdırılmayıb",
+        "Check-out vaxtı deyilməyib",
+        "Otelin ünvanı qeyd olunmayıb"
+      ]
+    },
+    "restaurant-2-ru": {
+      "title": "Şənbə axşamı iki nəfərlik stol sifarişi",
+      "intent": "restaurant_booking",
+      "outcome": "SİFARİŞ RAZILAŞDIRILDI (DEPOZİT ÖDƏNİŞİ GÖZLƏNİLİR)",
+      "summary": "Zəng edən şənbə günü saat 19:00-a iki nəfərlik stol istədi. Qarşı tərəf sifarişi təsdiqlədi və 50 manat depozitin bu gün kartla ödənilməli olduğunu bildirdi. Zəng edən depoziti bu gün köçürəcəyinə söz verdi.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Sifariş tarixi",
+          "value": "Şənbə, 10 oktyabr 2026"
+        },
+        {
+          "type": "time",
+          "label": "Sifariş vaxtı",
+          "value": "19:00"
+        },
+        {
+          "type": "other",
+          "label": "Qonaq sayı",
+          "value": "2 nəfər"
+        },
+        {
+          "type": "price",
+          "label": "Depozit",
+          "value": "50 manat"
+        },
+        {
+          "type": "date",
+          "label": "Depozitin ödəniş müddəti",
+          "value": "Bu gün, 9 oktyabr 2026"
+        }
+      ],
+      "agreements": [
+        "Şənbə, 10 oktyabr 2026, saat 19:00-a iki nəfərlik stol sifarişi",
+        "Depozit 50 manatdır və bu gün kartla ödənilməlidir"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "50 manat depoziti kartla köçürmək",
+          "due": "bu gün",
+          "due_iso": "2026-10-09"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Restoranda şam yeməyi (2 nəfər)",
+          "details": "İki nəfərlik stol sifarişi. 50 manat depozit ödənilib/ödənilməlidir.",
+          "start": "2026-10-10T19:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "reminder",
+          "title": "50 manat depoziti köçür",
+          "details": "Şənbə saat 19:00 stol sifarişi üçün 50 manat depoziti bu gün kartla ödəmək lazımdır.",
+          "start": "2026-10-09",
+          "end": "",
+          "all_day": true,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Restoranın adı və ünvanı zəngdə qeyd olunmayıb",
+        "Depozitin hansı kart nömrəsinə və ya rekvizitlərə köçürüləcəyi bildirilməyib",
+        "Sifarişin kimin adına qeydə alındığı aydın deyil"
+      ]
+    },
+    "meeting-2-en": {
+      "title": "Sabahkı zəngin 10:30-a keçirilməsi",
+      "intent": "meeting",
+      "outcome": "ZƏNG 10:30-A KEÇİRİLDİ",
+      "summary": "Mən sabahkı zəngi deadline-a görə 10:30-a keçirməyi təklif etdim. Dostum razılaşdı və hesabatı o vaxta qədər hazırlayacağını dedi.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Zəngin tarixi",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "time",
+          "label": "Zəngin vaxtı",
+          "value": "10:30"
+        }
+      ],
+      "agreements": ["Sabahkı zəng 10:30-a keçirildi"],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Hesabatı hazırlamaq",
+          "due": "sabah 10:30-a qədər",
+          "due_iso": "2026-10-10T10:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Dostla zəng",
+          "details": "Deadline-a görə 10:30-a keçirilmiş zəng. Dostum hesabatı hazırlayacaq.",
+          "start": "2026-10-10T10:30",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": []
+    },
+    "doctor-1": {
+      "title": "Həkim Məmmədovanın qəbuluna yazılma",
+      "intent": "appointment",
+      "outcome": "QƏBUL RAZILAŞDIRILDI",
+      "summary": "Həkim Məmmədovanın qəbuluna yazılmaq üçün zəng edildi. Bazar ertəsi, 12 oktyabr saat 11:30 boş vaxt təklif olundu, müayinənin qiyməti 40 manatdır. Analiz nəticələrinin gətirilməsi tələb olundu və bununla razılaşıldı.",
+      "entities": [
+        {
+          "type": "person",
+          "label": "Həkim",
+          "value": "Həkim Məmmədova"
+        },
+        {
+          "type": "date",
+          "label": "Qəbul tarixi",
+          "value": "2026-10-12 (bazar ertəsi)"
+        },
+        {
+          "type": "time",
+          "label": "Qəbul saatı",
+          "value": "11:30"
+        },
+        {
+          "type": "price",
+          "label": "Müayinə haqqı",
+          "value": "40 manat"
+        }
+      ],
+      "agreements": [
+        "Qəbul bazar ertəsi, 12 oktyabr 2026, saat 11:30-dadır",
+        "Müayinə 40 manatdır",
+        "Analiz nəticələri qəbula gətiriləcək"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Analiz nəticələrini qəbula gətirmək",
+          "due": "Bazar ertəsi saat 11:30",
+          "due_iso": "2026-10-12T11:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Həkim Məmmədovanın qəbulu",
+          "details": "Müayinə 40 manat. Analiz nəticələrini götürməyi unutmayın.",
+          "start": "2026-10-12T11:30",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "reminder",
+          "title": "Analiz nəticələrini götürmək",
+          "details": "Həkim Məmmədovanın qəbuluna analiz nəticələrini və 40 manat götürün.",
+          "start": "2026-10-12T09:30",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Qəbulun ünvanı/klinika göstərilməyib",
+        "Qeydiyyat üçün ad və ya əlaqə məlumatı soruşulmayıb"
+      ]
+    },
+    "doctor-2-reschedule": {
+      "title": "Qəbulun çərşənbəyə köçürülməsi",
+      "intent": "appointment",
+      "outcome": "QƏBUL ÇƏRŞƏNBƏ 15:00-A KÖÇÜRÜLDÜ",
+      "summary": "Qarşı tərəf 10 oktyabr (şənbə) tarixli qəbulun təxirə salındığını bildirdi və çərşənbə saat 15:00-ı təklif etdi. Mən razılaşdım. Qarşı tərəf qəbuldan bir gün əvvəl xatırlatma SMS-i göndərəcəyini təsdiqlədi.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Əvvəlki qəbul tarixi",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "date",
+          "label": "Yeni qəbul tarixi",
+          "value": "2026-10-14 (çərşənbə)"
+        },
+        {
+          "type": "time",
+          "label": "Yeni qəbul saatı",
+          "value": "15:00"
+        },
+        {
+          "type": "date",
+          "label": "Xatırlatma SMS-i",
+          "value": "2026-10-13"
+        }
+      ],
+      "agreements": [
+        "Qəbul 14 oktyabr 2026, çərşənbə saat 15:00-a köçürüldü",
+        "Qəbuldan bir gün əvvəl xatırlatma SMS-i göndəriləcək"
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Xatırlatma SMS-i göndərmək",
+          "due": "bir gün əvvəl",
+          "due_iso": "2026-10-13"
+        },
+        {
+          "owner": "me",
+          "task": "Çərşənbə saat 15:00-da qəbula gəlmək",
+          "due": "çərşənbə saat 3",
+          "due_iso": "2026-10-14T15:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Qəbul",
+          "details": "Sabahkı (10 oktyabr) qəbul təxirə salınıb, yeni vaxt çərşənbə 15:00. Bir gün əvvəl SMS xatırlatması gələcək.",
+          "start": "2026-10-14T15:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": ["Qəbulun yeri və yeni qəbulun müddəti dəqiqləşdirilməyib"]
+    },
+    "meeting-1": {
+      "title": "Layihə görüşünün təşkili",
+      "intent": "meeting",
+      "outcome": "GÖRÜŞ RAZILAŞDIRILDI",
+      "summary": "Dost layihəni müzakirə etmək üçün sabah saat 15:00-da görüşməyi təklif etdi. Mən razılaşdım və görüşün Nizami küçəsindəki ofisdə keçirilməsini təklif etdim. Mən prezentasiyanı axşama qədər göndərəcəyəm. Dost isə müqaviləni bazar ertəsi göndərəcək.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Görüş tarixi",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "time",
+          "label": "Görüş saatı",
+          "value": "15:00"
+        },
+        {
+          "type": "location",
+          "label": "Görüş yeri",
+          "value": "Nizami küçəsindəki ofis"
+        },
+        {
+          "type": "date",
+          "label": "Müqavilənin göndərilməsi",
+          "value": "2026-10-12"
+        }
+      ],
+      "agreements": [
+        "Layihəni müzakirə etmək üçün 10 oktyabr 2026, saat 15:00-da görüşmək",
+        "Görüş Nizami küçəsindəki ofisdə keçiriləcək"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Prezentasiyanı dosta göndərmək",
+          "due": "axşama qədər",
+          "due_iso": "2026-10-09"
+        },
+        {
+          "owner": "other",
+          "task": "Müqaviləni göndərmək",
+          "due": "bazar ertəsi",
+          "due_iso": "2026-10-12"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Layihə görüşü",
+          "details": "Dostla layihənin müzakirəsi",
+          "start": "2026-10-10T15:00",
+          "end": "",
+          "all_day": false,
+          "location": "Nizami küçəsindəki ofis"
+        },
+        {
+          "type": "reminder",
+          "title": "Prezentasiyanı göndər",
+          "details": "Prezentasiyanı axşama qədər dosta göndər",
+          "start": "2026-10-09T18:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "map",
+          "title": "Görüş yeri",
+          "details": "Nizami küçəsindəki ofis",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": "Nizami küçəsi, ofis"
+        }
+      ],
+      "open_questions": ["Ofisin dəqiq ünvanı göstərilməyib"]
+    },
+    "purchase-2-tr": {
+      "title": "Telefon ekranının dəyişdirilməsi",
+      "intent": "appointment",
+      "outcome": "TELEFON BU GÜN SAAT 17:00-A QƏDƏR GƏTİRİLƏCƏK",
+      "summary": "Zəng edən telefonun ekranını dəyişdirməyin qiymətini soruşdu. Orijinal ekranın qiyməti 180 manatdır, iş bir saat çəkir. Telefonu bu gün saat 5-ə qədər gətirmək razılaşdırıldı.",
+      "entities": [
+        {
+          "type": "price",
+          "label": "Orijinal ekranın qiyməti",
+          "value": "180 manat"
+        },
+        {
+          "type": "other",
+          "label": "İşin müddəti",
+          "value": "1 saat"
+        },
+        {
+          "type": "time",
+          "label": "Telefonu gətirmək üçün son vaxt",
+          "value": "2026-10-09 17:00"
+        }
+      ],
+      "agreements": [
+        "Orijinal ekran 180 manata dəyişdiriləcək",
+        "Telefon bu gün saat 5-ə qədər gətiriləcək"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Telefonu ekran dəyişdirilməsi üçün gətirmək",
+          "due": "bu gün saat 5-ə qədər",
+          "due_iso": "2026-10-09T17:00"
+        },
+        {
+          "owner": "other",
+          "task": "Ekranı orijinal ekranla bir saat ərzində dəyişmək",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "reminder",
+          "title": "Telefonu ekran təmirinə aparmaq",
+          "details": "Orijinal ekranın dəyişdirilməsi: 180 manat, iş 1 saat çəkir. Saat 17:00-a qədər gətirmək lazımdır.",
+          "start": "2026-10-09T16:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": ["Təmir xidmətinin ünvanı zəngdə qeyd olunmayıb"]
+    },
+    "purchase-1": {
+      "title": "Soyuducu alışı barədə sorğu",
+      "intent": "purchase",
+      "outcome": "SABAH BAXMAQ ÜÇÜN GƏLİŞ PLANLAŞDIRILDI",
+      "summary": "Zəng edən saytdakı soyuducunun hələ satışda olub-olmadığını və qiymətini soruşdu. Qarşı tərəf soyuducunun mövcud olduğunu, qiymətinin 1250 manat olduğunu və 12 aylıq kreditlə də almağın mümkün olduğunu bildirdi. Zəng edən nağd alacağını və sabah gəlib baxacağını dedi.",
+      "entities": [
+        {
+          "type": "price",
+          "label": "Soyuducunun qiyməti",
+          "value": "1250 manat"
+        },
+        {
+          "type": "other",
+          "label": "Kredit seçimi",
+          "value": "12 ay"
+        },
+        {
+          "type": "date",
+          "label": "Baxış günü",
+          "value": "2026-10-10"
+        }
+      ],
+      "agreements": [
+        "Soyuducu hələ satışdadır, qiyməti 1250 manatdır",
+        "Zəng edən nağd ödəniş edəcək"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Soyuducuya baxmağa gəlmək",
+          "due": "sabah",
+          "due_iso": "2026-10-10"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Soyuducuya baxmağa getmək",
+          "details": "Saytdakı soyuducuya baxmaq. Qiymət: 1250 manat, nağd ödəniş.",
+          "start": "2026-10-10",
+          "end": "",
+          "all_day": true,
+          "location": ""
+        },
+        {
+          "type": "note",
+          "title": "Soyuducu qiyməti",
+          "details": "Qiymət: 1250 manat. 12 aylıq kredit seçimi də var. Nağd almaq qərarı verildi.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Mağazanın ünvanı və gəliş vaxtı dəqiqləşdirilmədi",
+        "Nağd ödənişdə endirim olub-olmadığı soruşulmadı"
+      ]
+    },
+    "delivery-1": {
+      "title": "Sifarişin çatdırılması",
+      "intent": "delivery",
+      "outcome": "ÇATDIRILMA QONŞUYA TƏHVİL VERİLƏCƏK",
+      "summary": "Sifarişin bu gün saat 14:00 ilə 16:00 arası çatdırılacağı bildirildi. Mən evdə olmayacağımı deyib qonşuya verilməsini xahiş etdim. Qarşı tərəf razılaşdı: kuryer zəng edib sifarişi qonşuya təhvil verəcək. Çatdırılma haqqı 5 manatdır.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Çatdırılma tarixi",
+          "value": "2026-10-09"
+        },
+        {
+          "type": "time",
+          "label": "Çatdırılma vaxtı",
+          "value": "14:00–16:00"
+        },
+        {
+          "type": "price",
+          "label": "Çatdırılma haqqı",
+          "value": "5 manat"
+        },
+        {
+          "type": "person",
+          "label": "Təhvil alan",
+          "value": "Qonşu"
+        }
+      ],
+      "agreements": [
+        "Sifariş bu gün 14:00–16:00 arası çatdırılacaq",
+        "Sifariş qonşuya təhvil veriləcək",
+        "Çatdırılma haqqı 5 manatdır"
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Kuryer zəng edib sifarişi qonşuya təhvil versin",
+          "due": "bu gün 14:00–16:00 arası",
+          "due_iso": "2026-10-09T16:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Sifarişin çatdırılması (qonşuya)",
+          "details": "Kuryer zəng edib sifarişi qonşuya təhvil verəcək. Çatdırılma haqqı 5 manat.",
+          "start": "2026-10-09T14:00",
+          "end": "2026-10-09T16:00",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "reminder",
+          "title": "Qonşuya çatdırılma barədə xəbər ver",
+          "details": "Sifariş bu gün 14:00–16:00 arası qonşuya təhvil veriləcək.",
+          "start": "2026-10-09T13:30",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "5 manat çatdırılma haqqının necə və kim tərəfindən ödənəcəyi aydın deyil",
+        "Hansı qonşuya təhvil veriləcəyi dəqiqləşdirilməyib"
+      ]
+    },
+    "delivery-2": {
+      "title": "A-2290 sifarişinin gecikməsi",
+      "intent": "delivery",
+      "outcome": "ÇATDIRILMA BAZAR ERTƏSİNƏ TƏYİN EDİLDİ, PULSUZ",
+      "summary": "Zəng edən A-2290 nömrəli sifarişinin hələ gəlmədiyini bildirdi. Qarşı tərəf gecikməyə görə üzr istədi və sifarişin bazar ertəsi mütləq çatdırılacağını, çatdırılmanın isə pulsuz olacağını vəd etdi.",
+      "entities": [
+        {
+          "type": "reference",
+          "label": "Sifariş nömrəsi",
+          "value": "A-2290"
+        },
+        {
+          "type": "date",
+          "label": "Çatdırılma tarixi",
+          "value": "2026-10-12 (bazar ertəsi)"
+        },
+        {
+          "type": "price",
+          "label": "Çatdırılma haqqı",
+          "value": "Pulsuz"
+        }
+      ],
+      "agreements": [
+        "Sifariş bazar ertəsi (12 oktyabr 2026) çatdırılacaq",
+        "Çatdırılma pulsuz olacaq"
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "A-2290 sifarişini çatdırmaq",
+          "due": "Bazar ertəsi",
+          "due_iso": "2026-10-12"
+        },
+        {
+          "owner": "other",
+          "task": "Çatdırılmanı pulsuz etmək",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "A-2290 sifarişinin çatdırılması",
+          "details": "Gecikmiş A-2290 sifarişi bazar ertəsi çatdırılmalıdır, çatdırılma pulsuzdur.",
+          "start": "2026-10-12",
+          "end": "",
+          "all_day": true,
+          "location": ""
+        },
+        {
+          "type": "note",
+          "title": "A-2290 sifarişi",
+          "details": "Sifariş nömrəsi: A-2290. Gecikmə səbəbindən çatdırılma pulsuz olacaq. Çatdırılma tarixi: bazar ertəsi, 12 oktyabr 2026.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Çatdırılmanın dəqiq vaxtı (saat aralığı) bildirilmədi",
+        "Gecikmənin səbəbi açıqlanmadı"
+      ]
+    },
+    "support-2-bank": {
+      "title": "Bloklanmış kart üçün filiala müraciət",
+      "intent": "customer_support",
+      "outcome": "FİLİALA GƏLMƏK LAZIMDIR",
+      "summary": "Zəng edən kartının bloklandığını bildirib və filiala gəlməli olub-olmadığını soruşub. Qarşı tərəf şəxsiyyət vəsiqəsi ilə istənilən filiala gəlməyi tövsiyə edib. Yeni kart 10 manatdır və 5 iş günü ərzində hazır olur.",
+      "entities": [
+        {
+          "type": "price",
+          "label": "Yeni kartın qiyməti",
+          "value": "10 manat"
+        },
+        {
+          "type": "other",
+          "label": "Hazırlanma müddəti",
+          "value": "5 iş günü"
+        },
+        {
+          "type": "other",
+          "label": "Lazımi sənəd",
+          "value": "Şəxsiyyət vəsiqəsi"
+        }
+      ],
+      "agreements": [
+        "Yeni kart üçün şəxsiyyət vəsiqəsi ilə istənilən filiala müraciət edilməlidir",
+        "Yeni kartın qiyməti 10 manatdır",
+        "Kart 5 iş günü ərzində hazır olur"
+      ],
+      "commitments": [],
+      "actions": [
+        {
+          "type": "note",
+          "title": "Yeni kart sifarişi",
+          "details": "Kart bloklanıb. Şəxsiyyət vəsiqəsi ilə istənilən filiala getmək lazımdır. Yeni kart 10 manat, 5 iş gününə hazır olur.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Filiala nə vaxt gediləcəyi müəyyən edilməyib",
+        "Kartın niyə bloklandığı aydınlaşdırılmayıb"
+      ]
+    },
+    "support-1": {
+      "title": "İnternet nasazlığı ilə bağlı müraciət",
+      "intent": "customer_support",
+      "outcome": "USTA ÇAĞIRIŞI TƏYİN EDİLDİ",
+      "summary": "Zəng edən şəxs internetin iki gündür işləmədiyini bildirdi və abonent nömrəsini (554-221) verdi. Qarşı tərəf ustanın sabah saat 10:00 ilə 12:00 arası gələcəyini dedi və modemi yandırıb-söndürməyi tövsiyə etdi. Zəng edən bunu yoxlayacağını bildirdi.",
+      "entities": [
+        {
+          "type": "reference",
+          "label": "Abonent nömrəsi",
+          "value": "554-221"
+        },
+        {
+          "type": "date",
+          "label": "Ustanın gəliş tarixi",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "time",
+          "label": "Ustanın gəliş vaxtı",
+          "value": "10:00–12:00"
+        }
+      ],
+      "agreements": [
+        "Usta sabah saat 10:00 ilə 12:00 arası gələcək.",
+        "Zəng edən modemi yandırıb-söndürməyi yoxlayacaq."
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Ustanı göndərmək",
+          "due": "sabah saat 10 ilə 12 arası",
+          "due_iso": "2026-10-10T10:00"
+        },
+        {
+          "owner": "me",
+          "task": "Modemi yandırıb-söndürməyi yoxlamaq",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "İnternet ustasının gəlişi",
+          "details": "İnternet iki gündür işləmir. Abonent nömrəsi: 554-221. Usta 10:00–12:00 arası gələcək.",
+          "start": "2026-10-10T10:00",
+          "end": "2026-10-10T12:00",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "reminder",
+          "title": "Modemi yandırıb-söndürmək",
+          "details": "Ustanın gəlişindən əvvəl modemi yandırıb-söndürməyi yoxla.",
+          "start": "2026-10-09T10:30",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": []
+    },
+    "travel-1": {
+      "title": "Bakı–İstanbul aviabiletinin sifarişi",
+      "intent": "travel",
+      "outcome": "BİLET GÖTÜRÜLDÜ (pasport məlumatları gözlənilir)",
+      "summary": "Mən 20 oktyabr üçün Bakı–İstanbul bileti olub-olmadığını soruşdum. Dost səhər saat 07:45 reysini təklif etdi: qiyməti 320 manatdır, baqaj daxildir. Mən bileti götürməyə razılaşdım və pasport məlumatlarını dərhal mesajla göndərəcəyimi dedim.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Uçuş tarixi",
+          "value": "2026-10-20"
+        },
+        {
+          "type": "time",
+          "label": "Uçuş vaxtı",
+          "value": "07:45"
+        },
+        {
+          "type": "location",
+          "label": "Marşrut",
+          "value": "Bakı–İstanbul"
+        },
+        {
+          "type": "price",
+          "label": "Bilet qiyməti",
+          "value": "320 manat (baqaj daxil)"
+        }
+      ],
+      "agreements": [
+        "20 oktyabr səhər 07:45 Bakı–İstanbul reysinə bilet götürülür",
+        "Qiymət 320 manatdır, baqaj daxildir"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Pasport məlumatlarını mesajla göndər",
+          "due": "indi",
+          "due_iso": "2026-10-09T10:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Bakı–İstanbul uçuşu",
+          "details": "Səhər 07:45 reysi, 320 manat, baqaj daxil.",
+          "start": "2026-10-20T07:45",
+          "end": "",
+          "all_day": false,
+          "location": "Bakı"
+        },
+        {
+          "type": "reminder",
+          "title": "Pasport məlumatlarını göndər",
+          "details": "Bilet üçün pasport məlumatlarını dosta mesajla göndər.",
+          "start": "2026-10-09T10:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "note",
+          "title": "Bilet məlumatları",
+          "details": "20 oktyabr 2026, Bakı–İstanbul, saat 07:45, 320 manat, baqaj daxil.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Ödənişin nə vaxt və necə ediləcəyi razılaşdırılmayıb",
+        "Reys nömrəsi və aviaşirkət bildirilməyib",
+        "Bilet təsdiqinin nə vaxt göndəriləcəyi aydın deyil"
+      ]
+    },
+    "travel-2-taxi": {
+      "title": "Hava limanına taksi sifarişi",
+      "intent": "travel",
+      "outcome": "TAKSİ SİFARİŞİ RAZILAŞDIRILDI",
+      "summary": "Mən sabah səhər saat 5:30-a Yasamaldan hava limanına taksi sifariş etdim. Qiymət 25 manat olaraq razılaşdırıldı. Sürücü saat 5:20-də zəng edəcək.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Gediş tarixi",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "time",
+          "label": "Taksi vaxtı",
+          "value": "05:30"
+        },
+        {
+          "type": "time",
+          "label": "Sürücünün zəng vaxtı",
+          "value": "05:20"
+        },
+        {
+          "type": "price",
+          "label": "Qiymət",
+          "value": "25 manat"
+        },
+        {
+          "type": "location",
+          "label": "Götürülmə yeri",
+          "value": "Yasamal"
+        },
+        {
+          "type": "location",
+          "label": "Təyinat",
+          "value": "Hava limanı"
+        }
+      ],
+      "agreements": [
+        "Taksi sabah səhər 5:30-da Yasamaldan hava limanına aparacaq",
+        "Qiymət 25 manatdır"
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Sürücü götürülmədən əvvəl zəng etsin",
+          "due": "sabah 5:20",
+          "due_iso": "2026-10-10T05:20"
+        },
+        {
+          "owner": "other",
+          "task": "Yasamaldan hava limanına taksi təmin et",
+          "due": "sabah səhər 5:30",
+          "due_iso": "2026-10-10T05:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Hava limanına taksi",
+          "details": "Yasamaldan hava limanına taksi, 25 manat. Sürücü 5:20-də zəng edəcək.",
+          "start": "2026-10-10T05:30",
+          "end": "",
+          "all_day": false,
+          "location": "Yasamal"
+        },
+        {
+          "type": "reminder",
+          "title": "Sürücünün zəngini gözlə",
+          "details": "Sürücü 5:20-də zəng edəcək, taksi 5:30-da.",
+          "start": "2026-10-10T05:15",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Yasamalda dəqiq götürülmə ünvanı deyilmədi",
+        "Ödəniş üsulu razılaşdırılmadı"
+      ]
+    },
+    "personal-2-loan": {
+      "title": "Dosta 200 manat borc",
+      "intent": "personal",
+      "outcome": "BORC VERİLMƏSİ RAZILAŞDIRILDI",
+      "summary": "Dost Elgündən 200 manat borc istədi və gələn cümə qaytaracağını dedi. Elgün razılaşdı və pulu bu axşam dostunun kartına köçürəcəyini bildirdi.",
+      "entities": [
+        {
+          "type": "price",
+          "label": "Borc məbləği",
+          "value": "200 manat"
+        },
+        {
+          "type": "date",
+          "label": "Pulun köçürülməsi",
+          "value": "2026-10-09 (bu axşam)"
+        },
+        {
+          "type": "date",
+          "label": "Borcun qaytarılması",
+          "value": "2026-10-16 (gələn cümə)"
+        },
+        {
+          "type": "person",
+          "label": "Borc verən",
+          "value": "Elgün"
+        }
+      ],
+      "agreements": [
+        "Elgün dostuna 200 manat borc verəcək",
+        "Pul bu axşam karta köçürüləcək",
+        "Dost borcu gələn cümə qaytaracaq"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "200 manatı dostun kartına köçürmək",
+          "due": "bu axşam",
+          "due_iso": "2026-10-09"
+        },
+        {
+          "owner": "other",
+          "task": "200 manat borcu qaytarmaq",
+          "due": "gələn cümə",
+          "due_iso": "2026-10-16"
+        }
+      ],
+      "actions": [
+        {
+          "type": "reminder",
+          "title": "Dosta 200 manat köçür",
+          "details": "Dostun kartına 200 manat borc köçürmək.",
+          "start": "2026-10-09T19:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "reminder",
+          "title": "200 manat borcun qaytarılması",
+          "details": "Dost 200 manat borcu bu gün qaytarmalıdır.",
+          "start": "2026-10-16",
+          "end": "",
+          "all_day": true,
+          "location": ""
+        }
+      ],
+      "open_questions": []
+    },
+    "personal-1": {
+      "title": "Dostun ad günü dəvəti",
+      "intent": "personal",
+      "outcome": "DƏVƏT QƏBUL EDİLDİ",
+      "summary": "Dost bazar günü ad günü olduğunu bildirib, Məni saat 7-də evlərinə dəvət etdi. Mən mütləq gələcəyimi dedim və tortu özüm alacağımı söz verdim.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Ad günü tarixi",
+          "value": "2026-10-11 (bazar)"
+        },
+        {
+          "type": "time",
+          "label": "Görüş vaxtı",
+          "value": "19:00"
+        },
+        {
+          "type": "location",
+          "label": "Məkan",
+          "value": "Dostun evi"
+        }
+      ],
+      "agreements": ["Mən bazar günü saat 7-də dostun ad gününə gələcəyəm", "Tortu Mən alacağam"],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Ad gününə gəlmək",
+          "due": "bazar günü saat 7",
+          "due_iso": "2026-10-11T19:00"
+        },
+        {
+          "owner": "me",
+          "task": "Ad günü üçün tort almaq",
+          "due": "bazar günü saat 7-dək",
+          "due_iso": "2026-10-11T19:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Dostun ad günü",
+          "details": "Dostun evində ad günü məclisi. Tortu aparmağı unutma.",
+          "start": "2026-10-11T19:00",
+          "end": "",
+          "all_day": false,
+          "location": "Dostun evi"
+        },
+        {
+          "type": "reminder",
+          "title": "Ad günü üçün tort al",
+          "details": "Bazar günü saat 7-dək dostun ad günü üçün tort almaq.",
+          "start": "2026-10-11T12:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": ["Tortun növü və ölçüsü müzakirə edilmədi"]
+    },
+    "scam-1": {
+      "title": "Bank adından SMS kodu istəyən şübhəli zəng",
+      "intent": "scam_attempt",
+      "outcome": "KOD VERİLMƏDİ – FIRILDAQ CƏHDİ RƏDD EDİLDİ",
+      "summary": "Zəng edən şəxs özünü bankın təhlükəsizlik xidməti kimi təqdim edərək kartda şübhəli əməliyyat olduğunu bildirdi. Əməliyyatı ləğv etmək bəhanəsi ilə telefona gələn SMS kodunu istədi. Mən kodu heç kimə deməyəcəyimi bildirdim və banka özüm zəng edəcəyimi dedim.",
+      "entities": [],
+      "agreements": [],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Banka özüm zəng edib vəziyyəti yoxlamaq",
+          "due": "",
+          "due_iso": ""
+        }
+      ],
+      "actions": [
+        {
+          "type": "reminder",
+          "title": "Banka rəsmi nömrədən zəng et",
+          "details": "Bank adından SMS kodu istəyən şübhəli zəng barədə məlumat ver və kartda şübhəli əməliyyat olub-olmadığını yoxla. Kodu heç kimə demə.",
+          "start": "2026-10-09T10:30",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Kartda həqiqətən şübhəli əməliyyat olub-olmadığı bankın rəsmi xətti ilə yoxlanılmalıdır."
+      ]
+    },
+    "scam-2-prize": {
+      "title": "Saxta avtomobil uduşu zəngi",
+      "intent": "scam_attempt",
+      "outcome": "FIRILDAQ CƏHDİ – ÖDƏNİŞ EDİLMƏDİ",
+      "summary": "Zəng edən şəxs avtomobil udduğunuzu bildirərək sənədləşmə üçün 150 manat köçürməyi tələb etdi. Mən heç bir lotereyada iştirak etmədiyimi bildirdim. Bu, tipik fırıldaq cəhdinə bənzəyir; heç bir ödəniş razılaşdırılmadı.",
+      "entities": [
+        {
+          "type": "price",
+          "label": "Tələb olunan sənədləşmə ödənişi",
+          "value": "150 manat"
+        },
+        {
+          "type": "other",
+          "label": "İddia edilən uduş",
+          "value": "Avtomobil"
+        }
+      ],
+      "agreements": [],
+      "commitments": [],
+      "actions": [
+        {
+          "type": "note",
+          "title": "Fırıldaq zəngi qeydi",
+          "details": "09.10.2026, 10:00 – naməlum şəxs avtomobil uduşu iddiası ilə 150 manat köçürmə tələb etdi. Lotereyada iştirak etməmişəm. Pul köçürməyin; lazım gələrsə, polisə və ya bankınıza məlumat verin.",
+          "start": "2026-10-09T10:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": []
+    },
+    "rent-1": {
+      "title": "Nərimanovda kirayə evə baxış",
+      "intent": "appointment",
+      "outcome": "BAXIŞ RAZILAŞDIRILDI",
+      "summary": "Me Nərimanovdakı kirayə evin hələ boş olub-olmadığını soruşdu. Friend evin boş olduğunu, aylıq qiymətin 600 manat və bir aylıq depozit olduğunu bildirdi. Evə baxış sabah, 10 oktyabr 2026, saat 18:00-a razılaşdırıldı.",
+      "entities": [
+        {
+          "type": "location",
+          "label": "Ev",
+          "value": "Nərimanov"
+        },
+        {
+          "type": "price",
+          "label": "Aylıq kirayə",
+          "value": "600 manat"
+        },
+        {
+          "type": "price",
+          "label": "Depozit",
+          "value": "Bir aylıq kirayə (600 manat)"
+        },
+        {
+          "type": "date",
+          "label": "Baxış tarixi",
+          "value": "2026-10-10"
+        },
+        {
+          "type": "time",
+          "label": "Baxış saatı",
+          "value": "18:00"
+        }
+      ],
+      "agreements": [
+        "Evə baxış 10 oktyabr 2026, saat 18:00-da olacaq",
+        "Aylıq kirayə 600 manat, üstəgəl bir aylıq depozit"
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Evi göstərmək",
+          "due": "Sabah saat 6-da",
+          "due_iso": "2026-10-10T18:00"
+        },
+        {
+          "owner": "me",
+          "task": "Evə baxışa gəlmək",
+          "due": "Sabah 18:00",
+          "due_iso": "2026-10-10T18:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Nərimanovda kirayə evə baxış",
+          "details": "Kirayə: aylıq 600 manat + bir aylıq depozit.",
+          "start": "2026-10-10T18:00",
+          "end": "2026-10-10T19:00",
+          "all_day": false,
+          "location": "Nərimanov"
+        },
+        {
+          "type": "note",
+          "title": "Nərimanov kirayə ev şərtləri",
+          "details": "Aylıq kirayə 600 manat, üstəgəl bir aylıq depozit (600 manat).",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": "Nərimanov"
+        }
+      ],
+      "open_questions": ["Evin dəqiq ünvanı və görüş yeri bildirilmədi"]
+    },
+    "course-1": {
+      "title": "İngilis dili kursuna yazılma",
+      "intent": "appointment",
+      "outcome": "SINAQ DƏRSİNƏ GƏLMƏK RAZILAŞDIRILDI",
+      "summary": "Mən ingilis dili kursuna yazılmaq istədiyimi bildirdim. Qarşı tərəf qrupun çərşənbə və cümə günləri saat 18:30-da keçirildiyini, aylıq qiymətin 120 manat olduğunu söylədi. Pulsuz sınaq dərsi gələn çərşənbə olacaq və mən ona gələcəyimi təsdiqlədim.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Sınaq dərsi",
+          "value": "14 oktyabr 2026 (çərşənbə)"
+        },
+        {
+          "type": "time",
+          "label": "Dərs vaxtı",
+          "value": "18:30"
+        },
+        {
+          "type": "other",
+          "label": "Qrup günləri",
+          "value": "Çərşənbə və cümə"
+        },
+        {
+          "type": "price",
+          "label": "Aylıq ödəniş",
+          "value": "120 manat"
+        },
+        {
+          "type": "price",
+          "label": "Sınaq dərsi",
+          "value": "Pulsuz"
+        }
+      ],
+      "agreements": [
+        "Sınaq dərsi pulsuzdur və gələn çərşənbə saat 18:30-da keçiriləcək",
+        "Qrup dərsləri çərşənbə və cümə saat 18:30-dadır, aylıq 120 manat"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Sınaq dərsinə gəlmək",
+          "due": "gələn çərşənbə, 18:30",
+          "due_iso": "2026-10-14T18:30"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "İngilis dili kursu – pulsuz sınaq dərsi",
+          "details": "Pulsuz sınaq dərsi. Qrup: çərşənbə və cümə 18:30, aylıq 120 manat.",
+          "start": "2026-10-14T18:30",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "note",
+          "title": "İngilis dili kursu məlumatları",
+          "details": "Qrup dərsləri: çərşənbə və cümə, saat 18:30. Aylıq qiymət: 120 manat. Sınaq dərsi pulsuz – 14 oktyabr 2026, çərşənbə.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Kursun ünvanı deyilmədi",
+        "Dərsin müddəti və bitmə vaxtı bəlli deyil",
+        "Ödənişin nə vaxt və necə ediləcəyi razılaşdırılmadı",
+        "Qeydiyyat üçün hansı məlumatların lazım olduğu deyilmədi"
+      ]
+    },
+    "work-1": {
+      "title": "İş müsahibəsinə dəvət",
+      "intent": "appointment",
+      "outcome": "MÜSAHİBƏ RAZILAŞDIRILDI",
+      "summary": "Qarşı tərəf CV-ni bəyəndiklərini bildirərək çərşənbə axşamı saat 11:00-da müsahibəyə dəvət etdi. Mən gələcəyimi təsdiqlədim. Portfolionu bazar ertəsinə qədər email ilə göndərməyim razılaşdırıldı.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Müsahibə tarixi",
+          "value": "2026-10-13 (çərşənbə axşamı)"
+        },
+        {
+          "type": "time",
+          "label": "Müsahibə saatı",
+          "value": "11:00"
+        },
+        {
+          "type": "date",
+          "label": "Portfolionun göndərilmə son tarixi",
+          "value": "2026-10-12 (bazar ertəsi)"
+        }
+      ],
+      "agreements": [
+        "Çərşənbə axşamı saat 11:00-da müsahibəyə gəlmək",
+        "Portfolionu bazar ertəsinə qədər email ilə göndərmək"
+      ],
+      "commitments": [
+        {
+          "owner": "me",
+          "task": "Çərşənbə axşamı saat 11:00-da müsahibəyə gəlmək",
+          "due": "Çərşənbə axşamı saat 11-də",
+          "due_iso": "2026-10-13T11:00"
+        },
+        {
+          "owner": "me",
+          "task": "Portfolionu email ilə göndərmək",
+          "due": "Bazar ertəsinə qədər",
+          "due_iso": "2026-10-12"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "İş müsahibəsi",
+          "details": "CV əsasında dəvət olunduğum iş müsahibəsi.",
+          "start": "2026-10-13T11:00",
+          "end": "2026-10-13T12:00",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "reminder",
+          "title": "Portfolionu email ilə göndər",
+          "details": "Müsahibədən əvvəl portfolionu bazar ertəsinə qədər email ilə göndərmək lazımdır.",
+          "start": "2026-10-12T09:00",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Müsahibənin keçiriləcəyi ünvan bildirilmədi",
+        "Portfolionun göndəriləcəyi email ünvanı dəqiqləşdirilmədi",
+        "Müsahibənin müddəti və formatı (əyani/onlayn) bildirilmədi"
+      ]
+    },
+    "repair-1": {
+      "title": "Kombi təmiri üçün usta çağırışı",
+      "intent": "appointment",
+      "outcome": "USTA GƏLİŞİ RAZILAŞDIRILDI",
+      "summary": "Mən kombinin işləmədiyini bildirib usta göndərilməsini xahiş etdim. Qarşı tərəf ustanın bazar ertəsi saat 9-da gələcəyini və baxışın 30 manat olduğunu dedi. Mən həmin vaxt evdə olacağımı təsdiqlədim.",
+      "entities": [
+        {
+          "type": "date",
+          "label": "Ustanın gəlişi",
+          "value": "2026-10-12 (bazar ertəsi)"
+        },
+        {
+          "type": "time",
+          "label": "Gəliş saatı",
+          "value": "09:00"
+        },
+        {
+          "type": "price",
+          "label": "Baxış haqqı",
+          "value": "30 manat"
+        },
+        {
+          "type": "other",
+          "label": "Problem",
+          "value": "Kombi işləmir"
+        }
+      ],
+      "agreements": [
+        "Usta bazar ertəsi, 12 oktyabr saat 9:00-da gələcək",
+        "Baxış haqqı 30 manatdır"
+      ],
+      "commitments": [
+        {
+          "owner": "other",
+          "task": "Kombi üçün usta göndərmək",
+          "due": "bazar ertəsi saat 9",
+          "due_iso": "2026-10-12T09:00"
+        },
+        {
+          "owner": "me",
+          "task": "Ustanın gəlişi zamanı evdə olmaq",
+          "due": "bazar ertəsi saat 9",
+          "due_iso": "2026-10-12T09:00"
+        }
+      ],
+      "actions": [
+        {
+          "type": "calendar",
+          "title": "Kombi ustasının gəlişi",
+          "details": "Usta kombiyə baxmağa gələcək. Baxış haqqı 30 manat. Evdə olmaq lazımdır.",
+          "start": "2026-10-12T09:00",
+          "end": "2026-10-12T10:00",
+          "all_day": false,
+          "location": ""
+        },
+        {
+          "type": "note",
+          "title": "Kombi baxışı – qiymət",
+          "details": "Baxış haqqı: 30 manat. Usta 12 oktyabr saat 9:00-da gələcək.",
+          "start": "",
+          "end": "",
+          "all_day": false,
+          "location": ""
+        }
+      ],
+      "open_questions": [
+        "Təmirin özünün (baxışdan əlavə) qiyməti bilinmir",
+        "Ünvan zəngdə qeyd olunmayıb"
+      ]
+    }
+  }
+}
