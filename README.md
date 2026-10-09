@@ -13,6 +13,8 @@ Submission to NeuroBridge.SI Baku, 9–10 October 2026.
 >
 > The demo runs the full AI pipeline (Azure Speech + Translator + Claude). Only the parts that need the phone paired to a PC (the real GSM call, auto start) are listed at the bottom of the page and shown in the **2-minute video** (link in the submission).
 
+> **🎬 The full working version on a real GSM call** (auto start, two-way voice translation, scam alert, AI report) **is shown in the attached 2-minute video.** The online demo above lets judges try the same AI pipeline on any laptop.
+
 **Results at a glance**
 
 | Intent accuracy | Dates → exact ISO | Times    | Prices   | Commitment F1 | Automated tests | Languages | Users tested         |
